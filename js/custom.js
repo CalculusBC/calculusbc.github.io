@@ -4,7 +4,7 @@ function fixmetotop() {
     //aktuelle Scrollposition auslesen
     var currentScroll = $(window).scrollTop(),
     //+1em rechnen
-    currentScroll = currentScroll + 15,
+    currentScroll = currentScroll + 100,
     actualBottom = $('#bodybox').offset().top + $('#bodybox').outerHeight(true),
     heightSideNav = $('.table-of-contents').outerHeight(true);
     if (currentScroll >= fixmeTop && currentScroll <= actualBottom - heightSideNav) {

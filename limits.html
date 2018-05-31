@@ -39,27 +39,76 @@
             </nav>
         </div>
         <div class="container">
-            <h3>Limits</h3>
+            <h3 class="light-blue-text">Limits</h3>
             <div class="row">
                 <div class="col s12 m9 l10" id="bodybox">
                     <div id="introduction" class="section scrollspy">
-                        <p>`color(black)(lim_(xto1)x^2+3x-2)`</p>
+                        <h5 class="light-blue-text">What is a Limit?</h5>
+                        <p>`color(black)(lim_(xtoc)f(x))` is what the function, f(x) would equal or be as x approaches c. Even if f(x) is not defined at x=c, the `color(black)(lim_(xtoc)f(x))` would be what f(x) would have been if f(c) was defined.</p>
+                        <p>`color(black)(lim_(xtoc)f(x))` only exists if `color(black)(lim_(xtoc-)f(x)=lim_(xtoc+)f(x))`. `color(black)(lim_(xtoc-)f(x))` is the limit of f(x) as x approaches c from the left or values that are less than c. `color(black)(lim_(xtoc+)f(x))` is the limit of f(x) as x approaches c from the right or values that are greater than c.</p>
+                        <p>For example, in the graph below, the `color(black)(lim_(xtoc)f(x))` does not exist because the `color(black)(lim_(xtoc-)f(x)=2)` and `color(black)(lim_(xtoc+)f(x)=0)`, since 0 does not equal 2, the `color(black)(lim_(xtoc)f(x))` does not exist</p>
+                        <div class="video-container">
+                            <iframe src="https://www.desmos.com/calculator/zr2txaeq3p?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                        </div>
+                        <p>Here's some practice</p>
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <div class="video-container">
+                                    <iframe src="https://www.desmos.com/calculator/vazp37zhs4?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Determining Limits Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Question 1: What is `color(black)(lim_(xto-2)f(x))`?</p>
+                                <p>Question 2: What is `color(black)(lim_(xto0)f(x))`?</p>
+                                <p>Question 3: What is `color(black)(lim_(xto2)f(x))`?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: 4</p>
+                                <p>Answer 2: 6</p>
+                                <p>Answer 3: Does not exist</p>
+                            </div>
+                        </div>
                     </div>
-                    <div id="structure" class="section scrollspy">
+                    <div class="divider"></div>
+                    <div id="theorems" class="section scrollspy">
+                        <h5 class="light-blue-text">Limit Theorems</h5>
+                        <p>Here are the main limit theorems that you need to know for calculus.</p>
+                        <p>`color(black)(lim(kxxf(x))=kxxlimf(x))` where k is a constant</p>
+                        <p>`color(black)(lim(f(x)+g(x))=limf(x) + limg(x))`</p>
+                        <p>`color(black)(lim(f(x)xxg(x)) = limf(x) xx limg(x))`</p>
+                        <p>`color(black)(limf(x)/(g(x))=limf(x)-:limg(x)` where g(x) does not equal 0</p>
+                        <p>`color(black)(limk=k)`</p>
                     </div>
-                    <div id="initialization" class="section scrollspy">
+                    <div id="infinite" class="section scrollspy">
+                        <h5 class="light-blue-text">Infinite Limits</h5>
+                    </div>
+                    <div id="continuity" class="section scrollspy">
+                        <h5 class="light-blue-text">Continuity</h5>
+                    </div>
+                    <div id="lhospital" class="section scrollspy">
+                        <h5 class="light-blue-text">L'Hospital's Rule</h5>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul id="toc" class="section table-of-contents">
                         <li>
-                            <a href="#introduction">Introduction</a>
+                            <a href="#introduction">What is a Limit?</a>
                         </li>
                         <li>
-                            <a href="#structure">Structure</a>
+                            <a href="#theorems">Limit Theorems</a>
                         </li>
                         <li>
-                            <a href="#initialization">Intialization</a>
+                            <a href="#infinite">Infinite Limits</a>
+                        </li>
+                        <li>
+                            <a href="#continuity">Continuity</a>
+                        </li>
+                        <li>
+                            <a href="#lhospital">L'Hospital's Rule</a>
                         </li>
                     </ul>
                 </div>
