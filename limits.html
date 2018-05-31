@@ -12,18 +12,19 @@
 
     <body>
         <ul class="sidenav" id="slide-out">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="limits.html">Limits</a></li>
-                    <li><a href="derivatives.html">Derivatives</a></li>
-                    <li><a href="integrals.html">Integrals</a></li>
-                    <li><a href="series.html">Series</a></li>
-                    <li><a href="polar.html">Polar</a></li>
-                    <li><a href="parametric.html">Parametric</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="limits.html">Limits</a></li>
+            <li><a href="derivatives.html">Derivatives</a></li>
+            <li><a href="integrals.html">Integrals</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="polar.html">Polar</a></li>
+            <li><a href="parametric.html">Parametric</a></li>
         </ul>
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper light-blue">
-                    <a href="index.html" class="brand-logo center">Calculus AB/BC</a>
+                    <a href="index.html" class="brand-logo center hide-on-small-only">Calculus AB/BC</a>
+                    <a href="index.html" class="brand-logo center show-on-small hide-on-med-and-up">Calculus</a>
                     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="series.html">Series</a></li>
@@ -83,12 +84,60 @@
                         <p>`color(black)(limf(x)/(g(x))=limf(x)-:limg(x)` where g(x) does not equal 0</p>
                         <p>`color(black)(limk=k)`</p>
                     </div>
+                    <div class="divider"></div>
                     <div id="infinite" class="section scrollspy">
                         <h5 class="light-blue-text">Infinite Limits</h5>
+                        <p>`color(black)(lim_(xtooo)f(x))` or `color(black)(lim_(xtooo)f(x))` is the number f(x) approaches as x increases infintely or decreases infintely.</p>
+                        <p>You can use infinite limits to determine horizontal asymptotes. For example:</p>
+                        <p>`color(black)(lim_(xtooo)(x^2-5x+2)/(5x^2+3x+5))` can be determined by taking the highest degree of x and dividing every term by it. So it becomes `color(black)(lim_(xtooo)((x^2)/(x^2)-(5x)/(x^2)+(2)/(x^2))/((5x^2)/(x^2)+(3x)/(x^2)+(5)/(x^2)))`, and whenever you have `color(black)(lim_(xtooo)1/x)` or anything with a higher x degree on the bottom, then the value is automatically zero because it is like doing `color(black)(1/oo)`, which is equal to 0.</p>
+                        <p>`color(black)(lim_(xtooo)((x^2)/(x^2)-(5x)/(x^2)+(2)/(x^2))/((5x^2)/(x^2)+(3x)/(x^2)+(5)/(x^2)))` then becomes `color(black)(lim_(xtooo)(1-0+0)/(5+0+0)=1/5)`</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Determining Infinite Limits Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Question 1: What is `color(black)(lim_(xtooo)6/x^2)`?</p>
+                                <p>Question 2: What is `color(black)(lim_(xto-oo)(4x+1)/(3x-5))`?</p>
+                                <p>Question 3: What is `color(black)(lim_(xtooo)(3x^3)/(9x)`?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: 0</p>
+                                <p>Answer 2: 4/3</p>
+                                <p>Answer 3: `color(black)(oo)`</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="divider"></div>
                     <div id="continuity" class="section scrollspy">
                         <h5 class="light-blue-text">Continuity</h5>
+                        <p>f(x) is continuous at x=c if:</p>
+                        <p>1. f(c) is defined and c is in the domain. That means that f(c) is a value.</p>
+                        <p>2. `color(black)(lim_(xtoc)f(x))` exists because `color(black)(lim_(xtoc-)f(x)=lim(xtoc+)f(x))`</p>
+                        <p>3. `color(black)(lim_(xtoc)f(x)=f(c))`</p>
+                        <p>Your teacher might also say that a function is continuous if you can draw it without having to lift up your pencil. There are three types of discontinuity: jump (jumps from one line to another), removable (has a hole at a point), and infinite (where f(x) approaches infinity or negative infinity so the continuity cannot be determined).</p>
+                        <br>
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <div class="video-container">
+                                    <iframe src="https://www.desmos.com/calculator/z4tu8rmyh4?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Determining Limits Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Question 1: Is f(x) continuous at x=0?</p>
+                                <p>Question 2: Is f(x) continuous at x=2?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: Yes; f(x) fufills all the requirements of continuity at x=0</p>
+                                <p>Answer 2: No; the limit from the left does not equal the right so the limit does not exist.</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="divider"></div>
                     <div id="lhospital" class="section scrollspy">
                         <h5 class="light-blue-text">L'Hospital's Rule</h5>
                     </div>
