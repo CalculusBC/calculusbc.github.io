@@ -113,7 +113,7 @@
                         <h5 class="light-blue-text">Continuity</h5>
                         <p>f(x) is continuous at x=c if:</p>
                         <p>1. f(c) is defined and c is in the domain. That means that f(c) is a value.</p>
-                        <p>2. `color(black)(lim_(xtoc)f(x))` exists because `color(black)(lim_(xtoc-)f(x)=lim(xtoc+)f(x))`</p>
+                        <p>2. `color(black)(lim_(xtoc)f(x))` exists because `color(black)(lim_(xtoc-)f(x)=lim_(xtoc+)f(x))`</p>
                         <p>3. `color(black)(lim_(xtoc)f(x)=f(c))`</p>
                         <p>Your teacher might also say that a function is continuous if you can draw it without having to lift up your pencil. There are three types of discontinuity: jump (jumps from one line to another), removable (has a hole at a point), and infinite (where f(x) approaches infinity or negative infinity so the continuity cannot be determined).</p>
                         <br>
@@ -136,10 +136,32 @@
                                 <p>Answer 2: No; the limit from the left does not equal the right so the limit does not exist.</p>
                             </div>
                         </div>
+                        <p>There are also other theorems that rely on continuity</p>
+                        <p><strong>Intermediate Value Theorem:</strong> If f(x) is continuous on the closed interval of [a, b], then f(a)  M  f(b) then there must be an x=c where f(c) = M.</p>
+                        <p><strong>Extreme Value Theorem:</strong> If f(x) is continuous on the closed interval of [a, b] then there must be a x=c where f(x) is a min or max.</p>
                     </div>
                     <div class="divider"></div>
                     <div id="lhospital" class="section scrollspy">
                         <h5 class="light-blue-text">L'Hospital's Rule</h5>
+                        <p>If `color(black)(lim_(xtoc)f(x)/g(x)=(+-oo)/(+-oo)` or `color(black)(0/0)` then `color(black)(lim_(xtoc)f(x)/g(x)=lim_(xtoc)(f'(x))/(g'(x)))`</p>
+                        <p>`color(black)((+-oo)/(+-oo), 0/0)` are just two of the indeterminate forms. There are also `color(black)((0)(+-oo), 1^oo, 0^0, oo^0, oo-oo)`. You can use L'Hospital's Rule on those as well, but they are more complex.</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">L'Hospital's Rule Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Question 1: What is `color(black)(lim_(xto1)(x^2-1)/(x-1)`?</p>
+                                <p>Question 2: What is `color(black)(lim_(xtooo)x^2/e^x`?</p>
+                                <p>Question 3: What is `color(black)(lim_(xto0)5/x`?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: 2</p>
+                                <p>Answer 2: 0</p>
+                                <p>Answer 3: L'Hospital's Rule does not apply in this case because `color(black)(5/0)` is not an indeterminate form</p>
+                            </div>
+                        </div>
+                        <p>Remember, you can only use L'Hospital's Rule if the limit results in one of the indeterminate forms!</p>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">

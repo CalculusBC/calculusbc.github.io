@@ -11,15 +11,15 @@ function fixmetotop() {
       //CSS für fixed setzen
       $('.table-of-contents').css({
         position: 'fixed',
-        top: '0',
-        bottom: ''
+        top: '2000',
+        bottom: '2000'
       });
     } else {
       if(currentScroll >= actualBottom - heightSideNav) {
         $('.table-of-contents').css({
           position: 'fixed',
-          bottom: '0',
-          top: ''
+          bottom: '1000',
+          top: '1000'
         });
       } else {
         //CSS für nicht fixed setzen
