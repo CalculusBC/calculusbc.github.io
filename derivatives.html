@@ -40,27 +40,176 @@
             </nav>
         </div>
         <div class="container">
-            <h3>Derivatives</h3>
+            <h3 class="light-blue-text">Derivatives</h3>
             <div class="row">
                 <div class="col s12 m9 l10" id="bodybox">
                     <div id="introduction" class="section scrollspy">
-                        <p>`color(black)(dy/dx = (Delta y)/(Delta x) = f'(x)`</p>
+                        <h5 class="light-blue-text">What is a Derivative?</h5>
+                        <p>Your teacher will most likely call a derivative a function that returns the slope of a function at any given point, or a slope-finding machine if you will. This idea behind a derivative makes sense once you combine two concepts you have learned: slope and limits.</p>
+                        <p>The slope formula is `color(black)((rise)/(run)=(y_2-y_1)/(x_2-x_1)=(Delta y)/(Delta x)` where `color(black)(Delta=d)` just means change in.</p>
+                        <h6 class="light-blue-text">Formal Definition of a Derivative</h6>
+                        <p>The formal definition of a derivative just combines that formula with the slope formula to become `color(black)(f'(x)=lim_(Delta xto0)(f(x+Deltax)-f(x))/(Delta x))` where f'(x) means the derivative of the function f(x). This formula may seem confusing at first, but you just have to look closer to see the slope formula inside the formal definition of a derivative. </p>
+                        <p>If you look at the numerator of the fraction, you see `color(black)(f(x+Delta x)-f(x))`. This is essentially the same thing as doing the change in y. If you plug in an x value in f(x), you will return a y-value. `color(black)(f(x+Deltax))` might seem like it is equal to f(x) because it is `color(black)(lim_(Delta xto0))`, but this is not true. What you are doing is you are finding the change in y-value when there is an infinitesimal change in x. It's like finding the slope between the points x=2 and x=2.00000000000000000000000000001, but even smaller of a difference between the x values.</p>
+                        <p>Since the derivative of a function is a function that gives the slope of the original function at a single point, then the change in x has to extremely small, or essentially zero, which is why `color(black)(f'(x)=lim_(Delta xto0)(f(x+Deltax)-f(x))/(Delta x))` is the formal definition of a derivative.</p>
+                        <h6 class="light-blue-text">Alternative Definition of a Derivative</h6>
+                        <p>You may also see the alternative form of a derivative, it is just the same things as the definition of a derivative just written in a different way. It is `color(black)(f'(a)=lim_(Delta xtoa)(f(x)-f(a))/(x-a))`</p>
                     </div>
-                    <div id="structure" class="section scrollspy">
+                    <div class="divider"></div>
+                    <div id="formulas" class="section scrollspy">
+                        <h5 class="light-blue-text">Derivative Formulas</h5>
+                        <p>Here are all the derivative formulas that you will need to know for your time in Calculus AB/BC. u and v in these cases are sort of like functions, they could be just x, x^2, etc.</p>
+                        <div class="col s12 m6">
+                            <p>`color(black)((d)/(dx)a=0)` where a is a constant like 8 or 4</p>
+                            <p>`color(black)((d)/(dx)au=a(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)u^a=au^a-1(du)/(dx))` also known as power rule</p>
+                            <p>`color(black)((d)/(dx)(u+v)=(du)/(dx) + (dv)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)(u-v)=(du)/(dx) - (dv)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)uv=v(du)/(dx)+u(dv)/(dx))` also known as product rule</p>
+                            <p>`color(black)((d)/(dx)u/v=(v(du)/(dx)+u(dv)/(dx))/v^2)` also known as the quotient rule</p>
+                            <p>`color(black)((d)/(dx)f(g(x))=f'(g(x)) xx g'(x)`</p> also known as chain rule
+                            <p>`color(black)((d)/(dx)ln(u)=1/u(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)e^u=e^u(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)a^u=ln(a)a^u(du)/(dx))`</p>
+                        </div>
+                        <div class="col s12 m6">
+                            <p>`color(black)((d)/(dx)sin(u)=cos(u)(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)cos(u)=-sin(u)(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)tan(u)=sec^2(u)(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)arcsin(u)=1/sqrt(1-u^2)(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)arccos(u)=-(1/sqrt(1-u^2))(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)arctan(u)=1/(1+u^2)(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)csc(u)=-csc(u)cot(u)(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)sec(u)=sec(u)tan(u)(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)cot(u)=-csc^2(u)(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)arcsec(u)=1/(abs(x)sqrt(u^2-1))(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)arc csc(u)=-1/(abs(x)sqrt(u^2-1))(du)/(dx))`</p>
+                            <p>`color(black)((d)/(dx)arc cot(u)=-1/(1+u^2)(du)/(dx))`</p>
+                        </div>
                     </div>
-                    <div id="initialization" class="section scrollspy">
+                    <div class="divider"></div>
+                    <div id="graphs" class="section scrollspy">
+                        <h5 class="light-blue-text">Graphs and Derivatives</h5>
+                        <p>A derivative is a slope finding function of another function at any given x-value</p>
+                        <p>To find the slope at (x,y) on f(x), just plug in that x value into f'(x)</p>
+                        <p>The graph of f'(x) is the graph of the slope of f(x), if f'(x) is positive at an x-value, then the graph of f(x) will be increasing at that x-value. If f'(x) is negative at that x-value, then theh graph of f(x) will be decreasing at that x-value.</p>
+                        <p>The graph of f''(x) is the graph of the slope of f'(x) but also the concavity of f(x). If f''(x) is positive at an x-value, then f(x) will be concave up. If f''(x) is negative at that x-value, then f(x) will be concave down. Concavity will be explained the second derivative section</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="first" class="section scrollspy">
+                        <h5 class="light-blue-text">First Derivatives</h5>
+                        <p>First derivatives are the rate of change for the original function, for example, velocity is the first derivative of the position function.</p>
+                        <p>Derivatives have important applications that will be tested heavily on your AP test.</p>
+                        <h6 class="light-blue-text">Increasing and Decreasing Fuctions</h6>
+                        <p>Derivatives can tell you when the original function is increasing or decreasing. If you plug in an x-value and the derivative returns a positive y-value, then the original function is increasing. If you plug in an x-value and the derivative returns a negative y-value, then the original function is decreasing.</p>
+                        <h6 class="light-blue-text">Relative Extrema: First Derivative Test</h6>
+                        <p>You can find a relative minimum or maximum of a function by going through certain steps.</p>
+                        <p>1. Find the derivative of the function</p>
+                        <p>2. Find what x-value makes the derivative undefined or zero, these will be your <strong>critical numbers</strong>. (these x-values are critical numbers as long as these x-values, when plugged back into the original function, do not result in an undefined answer.</p>
+                        <p>3. Make a number line with your critical numbers on the number line and plug in x-values into the derivatives on the intervals that are created. (Do not include the critical numbers when you are testing because they should yield 0 or undefined, that's why they are your critical numbers). </p>
+                        <p>4. Find which critical numbers in which the sign of the derivative changes. If the derivative goes from a negative y-value to positive y-value, that means the function has just gone from decreasing to increasing, which means that the critical number is a relative minimum. If the derivative goes from a positive y-value to a negative y-value, that means the function has just gone from increasing to decreasing, which means that the critical number is a relative maximum.</p>
+                        <h6 class="light-blue-text">Relative Extrema: Second Derivative Test</h6>
+                        <p>You can find a relative minimum or maximum of a function by going through certain steps.</p>
+                        <p>1. Find the derivative of the function</p>
+                        <p>2. Find what x-values makes the derivative undefined or zero, these will be your critical numbers.</p>
+                        <p>3. Find the derivative of the derivative, or the second derivative.</p>
+                        <p>4. Plug in the x-value of the critical numbers into the second derivative, if the result is a positive y-value, then the function is concave up which means that there is a relative minimum at the critical points. If the result is a negative y-value, then the function is concave down which means that there is a relative maximum at the critical points.</p>
+                        <h6 class="light-blue-text">Absolute Extrema</h6>
+                        <p>You can find an absolute minimum or maximum of a function by going through certain steps. The problem is only an absolute extrema problem when f(x) is continuous on a closed interval [a,b].</p>
+                        <p>1. Find the critial numbers.</p>
+                        <p>2. Plug in the critical numbers and the end-points of the closed interval into f(x).</p>
+                        <p>3. The lowest y-value is the absolute minimum, and highest y-value is the absolute maximum.</p>
+                        <h6 class="light-blue-text">Tangent Lines</h6>
+                        <p>In order to find the tangent line at a point on a function, you must follow cerain steps.</p>
+                        <p>1. Find the derivative.</p>
+                        <p>2. Find the slope at the point by plugging the x-value into the derivative.</p>
+                        <p>3. Find the equation of the tangent line by plugging the values into the equation `color(black)(y-y_1=m(x-x_1))` where `color(black)((x_1,y_2)` is the point you are finding the tangent to and m is the sloper of the line found in step 2.</p>
+                        <h6 class="light-blue-text">Optimization Problems</h6>
+                        <p>For optimization problems, they will often ask you when something will be the lowest or the highest, this is essentially the same thing as asking for a minimum or maximum, so you will undergo the same steps for finding a relative extrema. You will find the relative minimum or maximum depending on what the problem is asking for.</p>
+                        <h6 class="light-blue-text">Related Rates</h6>
+                        <p>Find the derivative of the function that relates to the problem with respect to time. You will most likely have to differentiate using chain rule in order to differentiate with respect to time. Before, you would find the derivative with respect to x, but now it is the derivative with respect to time.</p>
+                        <p>For example, if your equation is `color(black)(x^2+y^2=10)`, the derivative would be `color(black)(2x(dx)/(dt)+2y(dy)/(dt)=0)`</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="second" class="section scrollspy">
+                        <h5 class="light-blue-text">Second Derivatives</h5>
+                        <p>Using second derivatives you can find concavity and inflection points. It is also the rate of change for the function f'(x), or the first derivative.</p>
+                        <h6 class="light-blue-text">Concavity</h6>
+                        <p>If the second derivative returns a positive y-value for an x-value, then the original function is concave up. Concave up looks sort of like a "U", with the left half of the "U" being concave up and decreasing and the right half being concave up and increasing. You can remember this by thinking of concave "U"p</p>
+                        <p>If the second derivative returns a negative y-value for an x-value, then the original function is concave down. Concave down looks sort of like a "n", with the left half of the "n" being concave down and increasing and the right half being concave down and decreasing. </p>
+                        <h6 class="light-blue-text">Inflection Points</h6>
+                        <p>You find inflection points in a fashion similar to finding relative extremas.</p>
+                        <p>1. Find the second derivative of a function</p>
+                        <p>2. Find when the second derivative equals 0 or is undefined.</p>
+                        <p>3. Make a number line with your the numbers found in step 2 on the number line and plug in x-values into the derivatives on the intervals that are created. (Do not include the numbers found in step 2 when you are testing because they should yield 0 or undefined, that's why they are your critical numbers). </p>
+                        <p>4. Find the numbers in which the sign of the derivative changes. If the second derivative goes from a negative y-value to positive y-value, that means the function has just gone from concave down to concave up. If the derivative goes from a positive y-value to a negative y-value, that means the function has just gone from concave up to concave down.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="implicit" class="section scrollspy">
+                        <h5 class="light-blue-text">Implicit Differentiation</h5>
+                        <p>Normally, derivatives involve functions y that are written explicitly as functions of x. However, in implicit differentiation problems functions y are written implicitly as functions of x.</p>
+                        <p>That seems really confusing, but if you practice implicit differentiation problems then it gets a lot easier. Here is an example of how to do implicit differentiation problems:</p>
+                        <p>`color(black)(d/(dx)(x^3+2xy+y^2=25))`</p> 
+                        <p>`color(black)(to 3x^2+2y+2x(dy)/(dx)+2y(dy)/(dx)=0)`</p>
+                        <p>`color(black)(to 2x(dy)/(dx)+2y(dy)/(dx)=-3x^2-2y)`</p> 
+                        <p>`color(black)(to (dy)/(dx)(2x+2y)=-3x^2-2y)`</p>
+                        <p>`color(black)(to (dy)/(dx)=(-3x^2-2y)/(2x+2y))`</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="inverse" class="section scrollspy">
+                        <h5 class="light-blue-text">Derivatives of Inverse Functions</h5>
+                        <p>If g(x) is the inverse of f(x), then `color(black)(g'(x)=1/(f'(g(x))))`</p>
+                        <p>*This is usually only like one question on the entire AP test</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="differentiability" class="section scrollspy">
+                        <h5 class="light-blue-text">Differentiability</h5>
+                        <p>Differentiability means that the derivative of a function exists at every point in an interval.</p>
+                        <p>A function is differentiable at a point if `color(black)(lim_(xtoc-)f'(x)=lim_(xtoc+)f'(x))`</p>
+                        <p>Non-differentiable functions are those that have a sudden change in slope or are wildly oscillating.</p>
+                        <p>If a function is differentiable at x=c, then it is also continuous at x=c. This is what differentiability implies continuity means.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="apply" class="section scrollspy">
+                        <h5 class="light-blue-text">Applications of Derivatives</h5>
+                        <h6 class="light-blue-text">Position, Velocity, and Accleration (Motion)</h6>
+                        <p>Velocity is just the derivative of position, and acceleration is the derivative of velocity.</p>
+                        <p>The speed is increasing when the sign of velocity and acceleration are the same and decreasing when their sign is not the same.</p>
+                        <p>Other information pertaining to motion will be covered in the integrals section.</p>
+                        <h6 class="light-blue-text">Logistic Models (BC)</h6>
+                        <p>They will often give you an equation of the derivative of population with respect to time. There are multiple equations but the two most common that you will see is: `color(black)((dP)/(dt)=kP(1-P/L))` or `color(black)((dP)/(dt)=kP(L-P))`. These equations accurately model the growth of population.</p>
+                        <p>Carrying capacity is calculated by finding out what P value will make dP/dt equal to 0, in both equations if P is equal to 0, then the growth will be 0, which makes sense, because if there is nobody in the population, then the population cannot grow. If you wanna know what the carrying capacity is, you'll have to look at `color(black)(L-P)` or `color(black)(1-P/L)`. In the first equation, dP/dt equals zero when P=L, so L is the carrying capacity. In the second equation, dP/dt is equal to zero when P=L, because P/L=1 and 1-1=0.</p>
+                        <p>The time when population is growing the fastest will always be half of the carrying capacity.</p>
+                        <p>The graph of population can start above the carrying capcity or below it, but it will always grow or decay in an s-curve like manner to get to the carrying capacity.</p>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul id="toc" class="section table-of-contents">
                         <li>
-                            <a href="#introduction">Introduction</a>
+                            <a href="#introduction">What is a Derivative?</a>
                         </li>
                         <li>
-                            <a href="#structure">Structure</a>
+                            <a href="#formulas">Derivative Formulas</a>
                         </li>
                         <li>
-                            <a href="#initialization">Intialization</a>
+                            <a href="#graphs">Graphs and Derivatives</a>
+                        </li>
+                        <li>
+                            <a href="#first">First Derivatives</a>
+                        </li>
+                        <li>
+                            <a href="#second">Second Derivatives</a>
+                        </li>
+                        <li>
+                            <a href="#implicit">Implicit Differentiation</a>
+                        </li>
+                        <li>
+                            <a href="#inverse">Derivatives of Inverse Functions</a>
+                        </li>
+                        <li>
+                            <a href="#differentiability">Differentiability</a>
+                        </li>
+                        <li>
+                            <a href="#apply">Applications of Derivatives</a>
                         </li>
                     </ul>
                 </div>
