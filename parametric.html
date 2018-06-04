@@ -18,7 +18,7 @@
             <li><a href="integrals.html">Integrals</a></li>
             <li><a href="series.html">Series</a></li>
             <li><a href="polar.html">Polar</a></li>
-            <li><a href="parametric.html">Parametric</a></li>
+            <li><a href="parametric.html">Parametric/Vectors</a></li>
         </ul>
         <div class="navbar-fixed">
             <nav>
@@ -29,7 +29,7 @@
                     <ul class="right hide-on-med-and-down">
                         <li><a href="series.html">Series</a></li>
                         <li><a href="polar.html">Polar</a></li>
-                        <li><a href="parametric.html">Parametric</a></li>
+                        <li><a href="parametric.html">Parametric/Vectors</a></li>
                     </ul>
                    <ul class="left hide-on-med-and-down">
                         <li><a href="limits.html">Limits</a></li>
@@ -52,11 +52,18 @@
                         </div>
                     </div>
                     <div class="divider"></div>
+                    <div id="vector" class="section scrollspy">
+                        <h5 class="light-blue-text">What are Vector-Valued Functions?</h5>
+                        <p>Vector-Valued functions, like parametric functions, contain more than one equation. There are three main vectors that you will work with in Calculus BC: position vectors, velocity vectors, and acceleration vectors. The position vector will look like `color(black)(vecR= (:x(t), y(t):) )` or something similar.</p>
+                        <p>Vectors have direction and magnitutde and the magnitude of a vector can be calcuated as `color(black)(norm(vecR)=sqrt(x(t)^2+y(t)^2))`</p>
+                        <p>If `color(black)(vecR)` gives the position of a moving object, then `color(black)(vecR'=vecV)` where V is velocity, and `color(black)(vecR''=vecV'=vecA)`, where A is acceleration. Speed would be the magnitude of the velocity vector and would be equivalent to `color(black)(norm(vecR')=norm(vecV)=sqrt(x'(t)^2+y'(t)^2))`</p>
+                    </div>
+                    <div class="divider"></div>
                     <div id="graphing" class="section scrollspy">
                         <h5 class="light-blue-text">Graphing Parametric Functions</h5>
                         <p>If you want to graph a parametric function, make a table with three columns, one column being t-values, another being x-values, and the final being y-values. After creating the table, plot the x and y coordinates.</p>
                         <p>Here is an example of the parametric function described in the first section: `color(black)(x=t^2)` and `color(black)(y=2t)`</p>
-                        <table class="hightlight">
+                        <table class="highlight">
                             <thead>
                                 <tr>
                                     <th>t</th>
@@ -107,6 +114,7 @@
                         <h5 class="light-blue-text">Eliminating the Parameter</h5>
                         <p>If you want to convert an equation back into rectangular form (y=x), then you need to eliminate the parameter. You do this by taking the x equation and making it so it becomes t=something. then you take that t=something and plug it into the y equation to get to rectangular form.</p>
                         <p>For example, if you have the equation `color(black)(x=t^2)` and `color(black)(y=2t)`, you take `color(black)(x=t^2)` and take the square root to get `color(black)(sqrt(x)=t)`. Afterwards, plug that into the y equation to get `color(black)(y=2sqrt(x))`. If you graph it, you will see that this equation will be equivalent to the parametric function. The orange line is the parametric function and the purple line is the rectangular form of the equation, you can see that they are equal in the graph below.</p>
+                        <p>To eliminate the parameter in a vector-valued function you will undergo the same steps as you would in eliminating the parameter in a parametric function.</p>
                         <div class="video-container">
                             <iframe src="https://www.desmos.com/calculator/0gmk7dagdc?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
                         </div>
@@ -119,16 +127,20 @@
                         <p>The second derivative of a parametric function is `color(black)((d/(dt)xx(dy)/(dx))/(dx)/(dt))` because that is equivalent to `color(black)((d^2y)/(dxdt)xx(dt)/(dx)=(d^2y)/(dx)^2`</p>
                         <p>In order to find tangent lines at t=c, plug in c into the first derivative of the parametric functions, then plug in c into the x and y to get the x and y-values. Then plug in everything into the equation `color(black)(y-y_1=m(x-x_1))` where `color(black)((x_1,y_2)` is the point you are finding the tangent to and m is the slope of the line.</p>
                         <h6 class="light-blue-text">Vector-Valued Functions Differentiation</h6>
+                        <p></p>
                     </div>
                     <div class="divider"></div>
                     <div id="arc" class="section scrollspy">
-                        <h5 class="light-blue-text">Arc Length</h5>
+                        <h5 class="light-blue-text">Arc Length/Distance Traveled</h5>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul id="toc" class="section table-of-contents">
                         <li>
                             <a href="#introduction">What are Parametric Functions?</a>
+                        </li>
+                        <li>
+                            <a href="#vector">What are Vector-Valued Functions?</a>
                         </li>
                         <li>
                             <a href="#graphing">Graphing Parametric Functions</a>
