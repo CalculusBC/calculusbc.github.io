@@ -82,7 +82,7 @@
                         <h6 class="light-blue-text">u-Substitution</h6>
                         <p>u-Substitution is like trying to reverse the chain rule. If f(g(x)) is the original function, then u is like g(x). For example, you cannot do `color(black)(int((3x^2+4x)(x^3+2x^2)^6)dx)` very easily using any of the rules listed above. In order to get the integrand to match any of the known integral formulas, we have to use u-substitution. We would set `color(black)(u=x^3+2x^2)` so then `color(black)((du)/(dx)=3x^2+4xto du=(3x^2+4x)dx)`. We can now sub everything in for u and we will get `color(black)(int((u)^6)du)`, which looks like the power rule integral formula. After this, you just take the integral to get `color(black)(1/7u^7+c)` which is equivalent to `color(black)(1/7(x^3+2x^2)^7+c).` If you are ever unsure about your answer, if you take the derivative of your answer and you should get the original integrand once again.</p>
                         <p>Now that was a nice and clean example, and a lot of the time, none of the problems will be as easy as that on the AP test, so here is a harder one to work through.</p>
-                        <p>`color(black)(int(cos(2x+3)dx))`. We should set u=2x+3, and `color(black)((du)/(dx)=2to du=2dx)`, but there is no 2 in the original integrand, so what do you do? You would multiply by 1. You multiply by 1 by multiply the integrand by 2 and the outside of the integral by 1/2, since 2x1/2=1, then you're not really changing anything about the expression. Now you can multiply everything in and you will come out with `color(black)(1/2int(2cos(2x+3)dx))` which is equivalent to `color(black)(1/2intcos(u)du)` which becomes `color(black)(1/2sin(u)+c)`, and when you sub in what u is, you have a final result of `color(black)(1/2sin(2x+3)+c)</p>
+                        <p>`color(black)(int(cos(2x+3)dx))`. We should set u=2x+3, and `color(black)((du)/(dx)=2to du=2dx)`, but there is no 2 in the original integrand, so what do you do? You would multiply by 1. You multiply by 1 by multiply the integrand by 2 and the outside of the integral by 1/2, since 2x1/2=1, then you're not really changing anything about the expression. Now you can multiply everything in and you will come out with `color(black)(1/2int(2cos(2x+3)dx))` which is equivalent to `color(black)(1/2intcos(u)du)` which becomes `color(black)(1/2sin(u)+c)`, and when you sub in what u is, you have a final result of `color(black)(1/2sin(2x+3)+c)`</p>
                         <h6 class="light-blue-text">Integration by Parts (BC)</h6>
                         <p>This is essentially u-substitution except that you act that you already have the derivative of one function. The equation is `color(black)(intudv=uv-intvdu)` where u=f(x), du=f'(x)dx, v=g(x), and dv=g'(x)dx. Sometimes, integration by parts may require you to do multiple integration by parts within itself, and in order to make it easier, sometimes you can use the tabular method. You should only really use the tabular method when you have a polynomial term</p>
                         <p>When you do the tabular method, you take three columns, and you have signs on the first column, u on the second, and dv on the last. On the signs column, you keep alternating signs starting from +, so row 1 is +, row 2 is -, etc. On the u column, you keep taking the derivative until you get to 0, on the dv column, you take the integral of dv, and move all the rows of dv up one. After that, just multiply straight across starting from the second row</p>
@@ -139,10 +139,92 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <p>So after multiply across you should get `color(black)(x^5/2e^(2x)-(5x^4)/4e^(2x)+(20x^3)/8e^(2x)-(60x^2)/16e^(2x)+(120x)/32e^(2x)-120/64e^(2x))</p>
+                        <p>So after multiply across you should get `color(black)(x^5/2e^(2x)-(5x^4)/4e^(2x)+(20x^3)/8e^(2x)-(60x^2)/16e^(2x)+(120x)/32e^(2x)-120/64e^(2x))`</p>
                         <h6 class="light-blue-text">Partial Fractions (BC)</h6>
                         <p>Sometimes you cannot use u-substitution to complete `color(black)(du/u)` so you have to use partial fractions. In this case, factor the denominator, and separate the factors out into `color(black)(intA/(v) + intB/(w) + ...)`, then A + B + ... should equal what the numerator used. After this, you can use the ln rule to integrate.</p>
-                        <p>Here's an example: `color(black)((x+1)/(x^2+5x+6)dx)`, you cannot use `color(black)(du/u)` because there is no number that you can multiply by to get the top to be the derivative of the bottom, so instead you factor the bottom into (x+3)(x+2), then separate the integrand into partial fractions of `color(black)(intA/(x+3)+intB/(x+2))`, then you cross multiply so A(x+2) + B(x+3) = x+1. Try to find out what A and B is by making the other one zero, so, for example, set x=-2, and you get A(0) + B(1) = -1, so B = -1, then set x=-3, and you get A(-1) + B(0) = -2, so A=2. Now the integral looks like `color(black)(int2/(x+3)+int-1/(x+2))` which equals `color(black)(2lnabs(x+3)-lnabs(x+2)+c)`</p>
+                        <p>Here's an example: `color(black)((x+1)/(x^2+5x+6)dx)`, you cannot use `color(black)(du)/u)` because there is no number that you can multiply by to get the top to be the derivative of the bottom, so instead you factor the bottom into (x+3)(x+2), then separate the integrand into partial fractions of `color(black)(intA/(x+3)+intB/(x+2))`, then you cross multiply so A(x+2) + B(x+3) = x+1. Try to find out what A and B is by making the other one zero, so, for example, set x=-2, and you get A(0) + B(1) = -1, so B = -1, then set x=-3, and you get A(-1) + B(0) = -2, so A=2. Now the integral looks like `color(black)(int2/(x+3)+int-1/(x+2))` which equals `color(black)(2lnabs(x+3)-lnabs(x+2)+c)`</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="indefinite" class="section scrollspy">
+                        <h5 class="light-blue-text">Indefinite Integrals</h5>
+                        <p>Indefinite Integrals are those that do not have limits of integration, this means that you are only finding the antiderivative, which is denotated by a upper case letter for the function. For example, the antiderivative of f(x) is F(x).</p>
+                        <p>Whenever you find an indefinite integral, you always have to have a +c, the reason for this is that the original function, or the derivative of the antiderivative is just the slope of the function, it does not tell you where the function has a point, you can see this in the graph below.</p>
+                        <div class="video-container">
+                            <iframe src="https://www.desmos.com/calculator/qld60kgicv?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                        </div>
+                        <p>In the graph above, all the functions have the same slope, so they have the same derivative, but when you take the indefinite integral of the derivative, it could be any of the graphs, you do not know unless you plug in a point to find what c in +c will be. By adding +c, we are acknowledging that the antiderivative function can exist at anywhere because the c could be any value until we are given an initial condition.</p>
+                        <p>*an initial condition is something like (1, 2), or some point that is on the antiderivative.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="definite" class="section scrollspy">
+                        <h5 class="light-blue-text">Definite Integrals</h5>
+                        <p>Definite integrals are those that have a lower and upper limit of integration and do not have a +c when integrated, instead it looks like:</p>
+                        <p>`color(black)(int_a^bf(x)=[F(x)]_a^b=F(b)-F(a))`</p>
+                        <p>Definite integrals return the area under the curve between the two limits of integration.</p>
+                        <p>The graph below shows two functions, the red line is the original function and the blue line is the area of the red line from 0 to the x value with respect to the x-axis. You can play around with this graph by clicking on edit this graph and you will be directed to the graph page on Desmos.</p>
+                        <div class="video-container">
+                            <iframe src="https://www.desmos.com/calculator/f1w6ui2vgf?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                        </div>
+                        <p>Here is another graph that you can play around with. This is a graph of the definite integral where you are able to change the limits of integration. The purple line is the original function and the highlighted part is the area that is being returned by the definite integral.</p>
+                        <div class="video-container">
+                            <iframe src="https://www.desmos.com/calculator/t4pdiw0dnt?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="ftc" class="section scrollspy">
+                        <h5 class="light-blue-text">Fundamental Theorems of Calculus</h5>
+                        <h6 class="light-blue-text">First Fundamental Theorem of Calculus</h6>
+                        <p>`color(black)(int_a^bf(x)=F(b)-F(a))` where f(x) is the original function and F(x) is the antiderivative. This tells us how to find the area under a curve.</p>
+                        <h6 class="light-blue-text">Second Fundamental Theorem of Calculus</h6>
+                        <p>`color(black)(d/(dx)int_a^xf(t)dt=f(x))` when f is continuous on [a, b]. This theorem can be expanded beyond just x in the limits of integration, so in general: `color(black)(d/(dx)int_a^uf(t)dt=f(u)du)`, so for `color(black)(d/(dx)int_a^(x^2)f(t)dt=f(x) xx 2x)`</p>
+                        <p>Here is an example of the second fundamental theorem of calculus. The orange dotted line is thhe original function, the blue line is the antiderivative of the function, and the green line is the derivative of the antiderivative. As you can see, the green line and the orange line are totally equal.</p>
+                        <div class="video-container">
+                            <iframe src="https://www.desmos.com/calculator/pgam6jbhuc?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                        </div>
+                        <h6 class="light-blue-text">Miscellaneous Integral Rules</h6>
+                        <div class="col s12 m6">
+                            <p>`color(black)(int_a^bkf(x)dx=kint_a^bf(x)dx`</p>
+                            <p>`color(black)(int_a^af(x)dx=0)`</p>
+                            <p>`color(black)(int_a^bf(x)dx=-int_b^af(x)dx`</p>
+                        </div>
+                        <div class="col s12 m6">
+                            <p>`color(black)(int_a^cf(x)dx+int_c^bf(x)dx=int_a^bf(x)dx)`</p>
+                            <p>`color(black)(int_a^b(f(x)+g(x))dx=int_a^bf(x)dx+int_a^bg(x)dx)`</p>
+                            <p>`color(black)(int_a^b(f(x)-g(x))dx=int_a^bf(x)dx-int_a^bg(x)dx)`</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="application" class="section scrollspy">
+                        <h5 class="light-blue-text">Application of Integrals</h5>
+                        <h6 class="light-blue-text">Solving Differential Equations</h6>
+                        <p>In order to solve a differential equation there are certain steps that you have to follow.</p>
+                        <p>1. Separate the variables, x's on one side, y's on the other, etc.</p>
+                        <p>2. Integrate and add +c</p>
+                        <p>3. Simplify as much as possible then use the initial condition to find what c is by plugging in the x-values and y-values.</p>
+                        <h6 class="light-blue-text">Motion and Integrals</h6>
+                        <p>In order to find the displacement from time a to b, do `color(black)(int_a^bv(t)dt)`. This is a vector quantity and does include direction.</p>
+                        <p>In order to find the total distance traveled from time a to b, do `color(black)(int_a^babs(v(t))dt)`. This is a scalar quantity and does not include direction.</p>
+                        <p>In order to find the current position of an object at time b, use your initial condition of (a, s(a)) and do `color(black)(s(a)+int_a^bv(t)dt)` where s(t) is position function.</p>
+                        <p>In order to go from velocity function to position function, find the antiderivative of velocity and solve for c using an initial equation. To go from acceleration to velocity, find the antiderivative of acceleration and solve for c using an initial equation.</p>
+                        <h6 class="light-blue-text">Average Value of a Function</h6>
+                        <p>If the integral `color(black)(int_a^bf(x)dx)` gives the area under f(x) from a to b, and area is just width x height, then if you divide area by width, then you will get the height. If the width is b-a, then the average height or value of a function is `color(black)(1/(b-a)int_a^bf(x)dx)`.</p>
+                        <h6 class="light-blue-text">Area Under Curve(s)</h6>
+                        <p>In order to find the area under a curve, find out which function is higher than the other and subtract the higher one by the lower one in the integrand.</p>
+                        <p>For example, if f(x) is higher than g(x) then do `color(black)(int_a^b(f(x)-g(x))dx)`</p>
+                        <p>In the graph below, the blue line is y=x and the red line is `color(black)(y=x^3)`</p>
+                        <div class="video-container">
+                            <iframe src="https://www.desmos.com/calculator/gzxwqg2mr6?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                        </div>
+                        <p>If you wanted the area under the curves from x=-1 to x=1 then you would do `color(black)(int_(-1)^0(x^3-x)dx)+int_0^1(x-x^3)dx)`</p>
+                        <h6 class="light-blue-text">Volume of Known Cross-Sections</h6>
+                        <p>`color(black)(Volume = int_a^bA(x)dx)` where A(x) is the area formula and dx is the thickness of the slice. When you do cross-sections like this, you are essentially taking the area of a shape and multiplying it by a thickness to get a volume, except the thickness is extremely infinitesimal small amount and you are taking the area at points like x=2 and x=2.0000000000001, except a smaller difference. By doing this, you make a smooth shape.</p>
+                        <h6 class="light-blue-text">Solids of Revolution: Washer Method</h6>
+                        <h6 class="light-blue-text">Solids of Revolution: Shell Method</h6>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="relationships" class="section scrollspy">
+                        <h5 class="light-blue-text">Relating Derivatives and Integrals</h5>
+                        <h6 class="light-blue-text"></h6>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
@@ -155,6 +237,21 @@
                         </li>
                         <li>
                             <a href="#anti">Antiderivatives</a>
+                        </li>
+                        <li>
+                            <a href="#indefinite">Indefinite Integrals</a>
+                        </li>
+                        <li>
+                            <a href="#definite">Definite Integrals</a>
+                        </li>
+                        <li>
+                            <a href="#ftc">Fundamental Theorems of Calculus</a>
+                        </li>
+                        <li>
+                            <a href="#application">Application of Integrals</a>
+                        </li>
+                        <li>
+                            <a href="#relationships">Relating Derivatives and Integrals</a>
                         </li>
                     </ul>
                 </div>
