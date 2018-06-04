@@ -40,27 +40,107 @@
             </nav>
         </div>
         <div class="container">
-            <h3>Parametric</h3>
+            <h3 class="light-blue-text">Parametric</h3>
             <div class="row">
                 <div class="col s12 m9 l10" id="bodybox">
                     <div id="introduction" class="section scrollspy">
-                        <p>`color(black)(y=sqrtt and x=t^2)`</p>
+                        <h5 class="light-blue-text">What are Parametric Functions?</h5>
+                        <p>Parametric functions are functions that have two equations, one for x and one for y. They can be organized into of x and y. Whenever you plug in t values, you will have an x-value and y-value returned.</p>
+                        <p>This is an example of a parametric function, with `color(black)(x=t^2)` and `color(black)(y=2t)`</p>
+                        <div class="video-container">
+                            <iframe src="https://www.desmos.com/calculator/eqhvrlodod?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                        </div>
                     </div>
-                    <div id="structure" class="section scrollspy">
+                    <div class="divider"></div>
+                    <div id="graphing" class="section scrollspy">
+                        <h5 class="light-blue-text">Graphing Parametric Functions</h5>
+                        <p>If you want to graph a parametric function, make a table with three columns, one column being t-values, another being x-values, and the final being y-values. After creating the table, plot the x and y coordinates.</p>
+                        <p>Here is an example of the parametric function described in the first section: `color(black)(x=t^2)` and `color(black)(y=2t)`</p>
+                        <table class="hightlight">
+                            <thead>
+                                <tr>
+                                    <th>t</th>
+                                    <th>x</th>
+                                    <th>y</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>9</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>16</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>25</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>After that, you should graph the x and y-values to get a graph that looks like this, which is very similar to the line graphed in the first part.</p>
+                        <div class="video-container">
+                            <iframe src="https://www.desmos.com/calculator/v0qvqvk401?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                        </div>
                     </div>
-                    <div id="initialization" class="section scrollspy">
+                    <div class="divider"></div>
+                    <div id="eliminate" class="section scrollspy">
+                        <h5 class="light-blue-text">Eliminating the Parameter</h5>
+                        <p>If you want to convert an equation back into rectangular form (y=x), then you need to eliminate the parameter. You do this by taking the x equation and making it so it becomes t=something. then you take that t=something and plug it into the y equation to get to rectangular form.</p>
+                        <p>For example, if you have the equation `color(black)(x=t^2)` and `color(black)(y=2t)`, you take `color(black)(x=t^2)` and take the square root to get `color(black)(sqrt(x)=t)`. Afterwards, plug that into the y equation to get `color(black)(y=2sqrt(x))`. If you graph it, you will see that this equation will be equivalent to the parametric function. The orange line is the parametric function and the purple line is the rectangular form of the equation, you can see that they are equal in the graph below.</p>
+                        <div class="video-container">
+                            <iframe src="https://www.desmos.com/calculator/0gmk7dagdc?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="derivatives" class="section scrollspy">
+                        <h5 class="light-blue-text">Derivatives</h5>
+                        <h6 class="light-blue-text">Parametric Functions Differentiation</h6>
+                        <p>The first derivative of a parametric function is `color(black)(((dy)/(dt))/((dx)/(dt)))` because that is equivalent to `color(black)((dy)/(dt)xx(dt)/(dx)=(dy)/(dx))`</p>
+                        <p>The second derivative of a parametric function is `color(black)((d/(dt)xx(dy)/(dx))/(dx)/(dt))` because that is equivalent to `color(black)((d^2y)/(dxdt)xx(dt)/(dx)=(d^2y)/(dx)^2`</p>
+                        <p>In order to find tangent lines at t=c, plug in c into the first derivative of the parametric functions, then plug in c into the x and y to get the x and y-values. Then plug in everything into the equation `color(black)(y-y_1=m(x-x_1))` where `color(black)((x_1,y_2)` is the point you are finding the tangent to and m is the slope of the line.</p>
+                        <h6 class="light-blue-text">Vector-Valued Functions Differentiation</h6>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="arc" class="section scrollspy">
+                        <h5 class="light-blue-text">Arc Length</h5>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul id="toc" class="section table-of-contents">
                         <li>
-                            <a href="#introduction">Introduction</a>
+                            <a href="#introduction">What are Parametric Functions?</a>
                         </li>
                         <li>
-                            <a href="#structure">Structure</a>
+                            <a href="#graphing">Graphing Parametric Functions</a>
                         </li>
                         <li>
-                            <a href="#initialization">Intialization</a>
+                            <a href="#eliminate">Eliminating the Parameter</a>
+                        </li>
+                        <li>
+                            <a href="#derivatives">Derivatives</a>
+                        </li>
+                        <li>
+                            <a href="#arc">Arc Length/Distance Traveled</a>
                         </li>
                     </ul>
                 </div>
