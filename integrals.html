@@ -40,27 +40,121 @@
             </nav>
         </div>
         <div class="container">
-            <h3>Integrals</h3>
+            <h3 class="light-blue-text">Integrals</h3>
             <div class="row">
                 <div class="col s12 m9 l10" id="bodybox">
                     <div id="introduction" class="section scrollspy">
+                        <h5 class="light-blue-text">What is a Integral?</h5>
+                        <p>An integral is another function in which the original function is a derivative. This function is known as the antiderivative. There is a difference between the definite and indefinite integral which will be explored later.</p>
                         <p>`color(black)(int_0^1(3x^2+2x-2)dx)`</p>
                     </div>
-                    <div id="structure" class="section scrollspy">
+                    <div class="divider"></div>
+                    <div id="formulas" class="section scrollspy">
+                        <h5 class="light-blue-text">Integral Formulas</h5>
+                        <p>These are the integral formulas you will need to know for your time in Calculus AB/BC</p>
+                        <div class="col s12 m6">
+                            <p>`color(black)(intkf(x)dx=kintf(x)dx)`</p>
+                            <p>`color(black)(int(f(x)+g(x))dx=intf(x)dx+intg(x)dx)`</p>
+                            <p>`color(black)(intu^ndu=1/(n+1)u^(n+1)+c)` this is the power rule</p> 
+                            <p>`color(black)(int(du)/u=lnabs(u)+c)`</p>
+                            <p>`color(black)(inta^udu=a^u/(ln(a))+c)`</p>
+                            <p>`color(black)(inte^udu=e^u+c)`</p>
+                        </div>
+                        <div class="col s12 m6">
+                            <p>`color(black)(intcos(u)du=sin(u)+c)`</p>
+                            <p>`color(black)(intsin(u)du=-cos(u)+c)`</p>
+                            <p>`color(black)(intsec^2(u)=tan(u)+c)`</p>
+                            <p>`color(black)(int tan(u)du=lnabs(sec(u))+c)`</p>
+                            <p>`color(black)(intsec(u)tan(u)du=sec(u)+c)`</p>
+                            <p>`color(black)(intsec(u)du=lnabs(sec(u)+tan(u))+c)`</p>
+                            <p>`color(black)(intcsc(u)cot(u)du=-csc(u)+c)`</p>
+                            <p>`color(black)(intcsc(u)du=lnabs(csc(u)-cot(u))+c)`</p>
+                            <p>`color(black)(intcsc^2(u)=-cot(u)+c)`</p>
+                            <p>`color(black)(int(du)/(sqrt(1-u^2))=arcsin(u)+c`</p>
+                            <p>`color(black)(int(du)/(1+u^2)=arctan(u)+c)`</p>
+                            <p>`color(black)(int(du)/(xsqrt(u^2-1))=arcsec(abs(u))+c)`</p>
+                        </div>
                     </div>
-                    <div id="initialization" class="section scrollspy">
+                    <div class="divider"></div>
+                    <div id="anti" class="section scrollspy">
+                        <h5 class="light-blue-text">Antiderivatives</h5>
+                        <p>You can find the antiderivatives of functions using the formulas listed above, but for some problems, you will need some extra tools in order to solve the problems you will encounter on the AP test.</p>
+                        <h6 class="light-blue-text">u-Substitution</h6>
+                        <p>u-Substitution is like trying to reverse the chain rule. If f(g(x)) is the original function, then u is like g(x). For example, you cannot do `color(black)(int((3x^2+4x)(x^3+2x^2)^6)dx)` very easily using any of the rules listed above. In order to get the integrand to match any of the known integral formulas, we have to use u-substitution. We would set `color(black)(u=x^3+2x^2)` so then `color(black)((du)/(dx)=3x^2+4xto du=(3x^2+4x)dx)`. We can now sub everything in for u and we will get `color(black)(int((u)^6)du)`, which looks like the power rule integral formula. After this, you just take the integral to get `color(black)(1/7u^7+c)` which is equivalent to `color(black)(1/7(x^3+2x^2)^7+c).` If you are ever unsure about your answer, if you take the derivative of your answer and you should get the original integrand once again.</p>
+                        <p>Now that was a nice and clean example, and a lot of the time, none of the problems will be as easy as that on the AP test, so here is a harder one to work through.</p>
+                        <p>`color(black)(int(cos(2x+3)dx))`. We should set u=2x+3, and `color(black)((du)/(dx)=2to du=2dx)`, but there is no 2 in the original integrand, so what do you do? You would multiply by 1. You multiply by 1 by multiply the integrand by 2 and the outside of the integral by 1/2, since 2x1/2=1, then you're not really changing anything about the expression. Now you can multiply everything in and you will come out with `color(black)(1/2int(2cos(2x+3)dx))` which is equivalent to `color(black)(1/2intcos(u)du)` which becomes `color(black)(1/2sin(u)+c)`, and when you sub in what u is, you have a final result of `color(black)(1/2sin(2x+3)+c)</p>
+                        <h6 class="light-blue-text">Integration by Parts (BC)</h6>
+                        <p>This is essentially u-substitution except that you act that you already have the derivative of one function. The equation is `color(black)(intudv=uv-intvdu)` where u=f(x), du=f'(x)dx, v=g(x), and dv=g'(x)dx. Sometimes, integration by parts may require you to do multiple integration by parts within itself, and in order to make it easier, sometimes you can use the tabular method. You should only really use the tabular method when you have a polynomial term</p>
+                        <p>When you do the tabular method, you take three columns, and you have signs on the first column, u on the second, and dv on the last. On the signs column, you keep alternating signs starting from +, so row 1 is +, row 2 is -, etc. On the u column, you keep taking the derivative until you get to 0, on the dv column, you take the integral of dv, and move all the rows of dv up one. After that, just multiply straight across starting from the second row</p>
+                        <p>Here is an example of integration by parts: `color(black)(lnxdx)` where u=lnx, du=dx/x, dv=1dx, v=x so `color(black)(lnx=xln(x)-intx/xdx)` which is equivalent to `color(black)(xln(x)-x+c)`</p>
+                        <p>Here is an example of the tabular method: `color(black)(intx^5e^(2x)dx)`</p>
+                        <table class="highlight">
+                            <thead>
+                                <tr>
+                                    <th>Sign</th>
+                                    <th>u</th>
+                                    <th>dv</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>`color(black)(e^(2x))`</td>
+                                </tr>
+                                <tr>
+                                    <td>+</td>
+                                    <td>`color(black)(x^5)`</td>
+                                    <td>`color(black)(1/2e^(2x))`</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>`color(black)(5x^4)`</td>
+                                    <td>`color(black)(1/4e^(2x))`</td>
+                                </tr>
+                                <tr>
+                                    <td>+</td>
+                                    <td>`color(black)(20x^3)`</td>
+                                    <td>`color(black)(1/8e^(2x))`</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>`color(black)(60x^2)`</td>
+                                    <td>`color(black)(1/16e^(2x))`</td>
+                                </tr>
+                                <tr>
+                                    <td>+</td>
+                                    <td>`color(black)(120x)`</td>
+                                    <td>`color(black)(1/32e^(2x))`</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>`color(black)(120)`</td>
+                                    <td>`color(black)(1/64e^(2x))`</td>
+                                </tr>
+                                <tr>
+                                    <td>+</td>
+                                    <td>`color(black)(0)`</td>
+                                    <td>`color(black)(1/120e^(2x))`</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>So after multiply across you should get `color(black)(x^5/2e^(2x)-(5x^4)/4e^(2x)+(20x^3)/8e^(2x)-(60x^2)/16e^(2x)+(120x)/32e^(2x)-120/64e^(2x))</p>
+                        <h6 class="light-blue-text">Partial Fractions (BC)</h6>
+                        <p>Sometimes you cannot use u-substitution to complete `color(black)(du/u)` so you have to use partial fractions. In this case, factor the denominator, and separate the factors out into `color(black)(intA/(v) + intB/(w) + ...)`, then A + B + ... should equal what the numerator used. After this, you can use the ln rule to integrate.</p>
+                        <p>Here's an example: `color(black)((x+1)/(x^2+5x+6)dx)`, you cannot use `color(black)(du/u)` because there is no number that you can multiply by to get the top to be the derivative of the bottom, so instead you factor the bottom into (x+3)(x+2), then separate the integrand into partial fractions of `color(black)(intA/(x+3)+intB/(x+2))`, then you cross multiply so A(x+2) + B(x+3) = x+1. Try to find out what A and B is by making the other one zero, so, for example, set x=-2, and you get A(0) + B(1) = -1, so B = -1, then set x=-3, and you get A(-1) + B(0) = -2, so A=2. Now the integral looks like `color(black)(int2/(x+3)+int-1/(x+2))` which equals `color(black)(2lnabs(x+3)-lnabs(x+2)+c)`</p>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul id="toc" class="section table-of-contents">
                         <li>
-                            <a href="#introduction">Introduction</a>
+                            <a href="#introduction">What is a Integral?</a>
                         </li>
                         <li>
-                            <a href="#structure">Structure</a>
+                            <a href="#formulas">Integral Formulas</a>
                         </li>
                         <li>
-                            <a href="#initialization">Intialization</a>
+                            <a href="#anti">Antiderivatives</a>
                         </li>
                     </ul>
                 </div>
