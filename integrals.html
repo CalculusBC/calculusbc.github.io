@@ -143,6 +143,8 @@
                         <h6 class="light-blue-text">Partial Fractions (BC)</h6>
                         <p>Sometimes you cannot use u-substitution to complete `color(black)(du/u)` so you have to use partial fractions. In this case, factor the denominator, and separate the factors out into `color(black)(intA/(v) + intB/(w) + ...)`, then A + B + ... should equal what the numerator used. After this, you can use the ln rule to integrate.</p>
                         <p>Here's an example: `color(black)((x+1)/(x^2+5x+6)dx)`, you cannot use `color(black)(du)/u)` because there is no number that you can multiply by to get the top to be the derivative of the bottom, so instead you factor the bottom into (x+3)(x+2), then separate the integrand into partial fractions of `color(black)(intA/(x+3)+intB/(x+2))`, then you cross multiply so A(x+2) + B(x+3) = x+1. Try to find out what A and B is by making the other one zero, so, for example, set x=-2, and you get A(0) + B(1) = -1, so B = -1, then set x=-3, and you get A(-1) + B(0) = -2, so A=2. Now the integral looks like `color(black)(int2/(x+3)+int-1/(x+2))` which equals `color(black)(2lnabs(x+3)-lnabs(x+2)+c)`</p>
+                        <h6 class="light-blue-text">Infinite Integrals</h6>
+                        <p>Add more...</p>
                     </div>
                     <div class="divider"></div>
                     <div id="indefinite" class="section scrollspy">
@@ -230,7 +232,7 @@
                         <p>Use this method if the function is perpindicular to the axis of rotation. This means that if you are given y=f(x) and you are rotating around x=k axis of rotation, you should use the shell method, and if you are given x=f(y) and you are rotating around y=k axis of rotation, you should use the shell method.</p>
                         <p>The equation for shell method is `color(black)(Volume = 2piint_a^br(x)h(x)dx)` where r(x) is the positive distance from the axis of rotation to the representative rectangles and h(x) is the function.</p>
                         <h6 class="light-blue-text">Arc Length (BC)</h6>
-                        <p>The formula for arc length is `color(black)(int_a^bsqrt(1+((dy)/(dx))^2))`</p>
+                        <p>The formula for arc length is `color(black)(int_a^bsqrt(1+((dy)/(dx))^2)dx)`</p>
                         <p>If you want to know how this equation was derived, Sal Khan made a very good video explaining how arc length is derived, see it <a href="https://www.khanacademy.org/math/ap-calculus-bc/bc-applications-definite-integrals/bc-arc-length/v/arc-length-formula">here</a>.</p>
                     </div>
                     <div class="divider"></div>

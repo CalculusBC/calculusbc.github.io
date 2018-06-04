@@ -40,27 +40,115 @@
             </nav>
         </div>
         <div class="container">
-            <h3>Series</h3>
+            <h3 class="light-blue-text">Series</h3>
             <div class="row">
                 <div class="col s12 m9 l10" id="bodybox">
                     <div id="introduction" class="section scrollspy">
-                        <p>`color(black)(sum_(n=1)^oo1/n)`</p>
+                        <h5 class="light-blue-text">What are Series?</h5>
+                        <p>Series are sequences added up. Sequences are a list of numbers in order. For examepl, the sequence `color(black)(a_n=a_1+(n-1)d)` is the equation for a arithmetic sequence. If `color(black)(a_1=3, d=2)`, then the sequence would be {3, 5, 7, 9...}. If you added up all those numbers in the sequence, then you would have a series.</p>
+                        <p>Notation for the series of the arithmetic sequence would be `color(black)(sum_(n=1)^oo 3+2(n-1))`</p>
+                        <p>This series would be divergent because it would go to infinity. If a series equals a certain number, it is convergent.</p>
                     </div>
-                    <div id="structure" class="section scrollspy">
+                    <div id="tests" class="section scrollspy">
+                        <h5 class="light-blue-text">Series Tests</h5>
+                        <p>Using these tests will tell you whether or not a series is convergent or divergent.</p>
+                        <table class="hightlight">
+                            <thead>
+                                <tr>
+                                    <th>Test</th>
+                                    <th>Series</th>
+                                    <th>Condition(s) of Convergence</th>
+                                    <th>Condition(s) of Divergence</th>
+                                    <th>Additional Comments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>nth-Term</td>
+                                    <td>`color(black)(sum_(n=1)^ooa_n)`</td>
+                                    <td>`color(black)()`</td>
+                                    <td>`color(black)(lim_(ntooo)a_n!=0)`</td>
+                                    <td>Cannot show convergence, only divergence.</td>
+                                </tr>
+                                <tr>
+                                    <td>Geometric Series</td>
+                                    <td>`color(black)(sum_(n=0)^ooar^n)`</td>
+                                    <td>`color(black)(0 < abs(r) < 1)`</td>
+                                    <td>`color(black)(abs(r) >= 1)`</td>
+                                    <td>If convergent then `color(black)(Sum =a/(1-r)`</td>
+                                </tr>
+                                <tr>
+                                    <td>Telescoping Series</td>
+                                    <td>`color(black)(sum_(n=1)^oo(b_n-b_(n+1)))`</td>
+                                    <td>`color(black)(lim_(ntooo)b_n=L)`</td>
+                                    <td>`color(black)()`</td>
+                                    <td>`color(black)(Sum = b_1-L)`</td>
+                                </tr>
+                                <tr>
+                                    <td>p-Series</td>
+                                    <td>`color(black)(sum_(n=1)^oo1/(n^p))`</td>
+                                    <td>`color(black)(p > 1)`</td>
+                                    <td>`color(black)(0 < p <= 1)`</td>
+                                    <td>`color(black)()`</td>
+                                </tr>
+                                <tr>
+                                    <td>Alternating Series</td>
+                                    <td>`color(black)(sum_(n=1)^oo(-1)^(n-1)a_n)`</td>
+                                    <td>`color(black)(a_n)` is decreasing, `color(black)(lim_(ntooo)a_n=0)` and `color(black)(a_n > 0)` for all n</td>
+                                    <td>`color(black)()`</td>
+                                    <td>`color(black)(abs(R_N) <=  a_(N+1))`</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="initialization" class="section scrollspy">
                         <div class="video-container">
                             <iframe src="https://www.desmos.com/calculator/pcnkihbc1l?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
                         </div>
-                    </div>
-                    <div id="initialization" class="section scrollspy">
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul id="toc" class="section table-of-contents">
                         <li>
-                            <a href="#introduction">Introduction</a>
+                            <a href="#introduction">What are Series?</a>
                         </li>
                         <li>
-                            <a href="#structure">Structure</a>
+                            <a href="#tests">Series Tests</a>
                         </li>
                         <li>
                             <a href="#initialization">Intialization</a>

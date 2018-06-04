@@ -124,14 +124,19 @@
                         <h5 class="light-blue-text">Derivatives</h5>
                         <h6 class="light-blue-text">Parametric Functions Differentiation</h6>
                         <p>The first derivative of a parametric function is `color(black)(((dy)/(dt))/((dx)/(dt)))` because that is equivalent to `color(black)((dy)/(dt)xx(dt)/(dx)=(dy)/(dx))`</p>
-                        <p>The second derivative of a parametric function is `color(black)((d/(dt)xx(dy)/(dx))/(dx)/(dt))` because that is equivalent to `color(black)((d^2y)/(dxdt)xx(dt)/(dx)=(d^2y)/(dx)^2`</p>
+                        <p>The second derivative of a parametric function is `color(black)((d/(dt)xx(dy)/(dx))/((dx)/(dt)))` because that is equivalent to `color(black)((d^2y)/(dxdt)xx(dt)/(dx)=(d^2y)/(dx)^2`</p>
                         <p>In order to find tangent lines at t=c, plug in c into the first derivative of the parametric functions, then plug in c into the x and y to get the x and y-values. Then plug in everything into the equation `color(black)(y-y_1=m(x-x_1))` where `color(black)((x_1,y_2)` is the point you are finding the tangent to and m is the slope of the line.</p>
                         <h6 class="light-blue-text">Vector-Valued Functions Differentiation</h6>
-                        <p></p>
+                        <p>The first derivative of the vector-valued function `color(black)(vecR=(:R_x(t),R_y(t):))` is `color(black)(vecR'=vecV=(:R_x'(t),R_y'(t):))`</p>
+                        <p>The second derivative of the vector-valued function `color(black)(vecR=(:R_x(t),R_y(t):))` is `color(black)(vecR''=vecV'=vecA=(:R_x'(t),R_y'(t):))`</p>
                     </div>
                     <div class="divider"></div>
                     <div id="arc" class="section scrollspy">
                         <h5 class="light-blue-text">Arc Length/Distance Traveled</h5>
+                        <h6 class="light-blue-text">Parametric Functions</h6>
+                        <p>The arc length for a parametric function from t=a to t=b is given by `color(black)(int_a^bsqrt(((dy)/(dt))^2 + ((dx)/(dt))^2)dt)`</p>
+                        <h6 class="light-blue-text">Vector-Valued Functions</h6>
+                        <p>The arc length, or the distance traveled by a vector-valued function is given by `color(black)(int_a^bnorm(vecR')dt)` which is equivalent to `color(black)(int_a^bsqrt((R_y'(t))^2 + (R_x'(t))^2)dt)` which equals `color(black)(int_a^bsqrt((V_y(t))^2 + (V_x(t))^2)dt)`.</p>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
