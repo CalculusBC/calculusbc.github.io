@@ -158,6 +158,7 @@
                     <div class="divider"></div>
                     <div id="definite" class="section scrollspy">
                         <h5 class="light-blue-text">Definite Integrals</h5>
+                        <p>The definition of a definite integral is `color(black)(lim_(ntooo)sum_(k=1)^nf(x_k)(b-a)/n=int_a^bf(x)dx`. This is basically adding up rectangles that extend from the x-axis (lower bound) that have an infintely small width, which essentially returns the area under the curve.</p>
                         <p>Definite integrals are those that have a lower and upper limit of integration and do not have a +c when integrated, instead it looks like:</p>
                         <p>`color(black)(int_a^bf(x)=[F(x)]_a^b=F(b)-F(a))`</p>
                         <p>Definite integrals return the area under the curve between the two limits of integration.</p>
@@ -169,6 +170,11 @@
                         <div class="video-container">
                             <iframe src="https://www.desmos.com/calculator/t4pdiw0dnt?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
                         </div>
+                        <p>You can approximate definite integrals through left-hand Riemann sums, right-hand Riemann sums, mid-point Riemann sums, and trapezoidal sums.</p>
+                        <p>Left-Hand Riemann Sums: `color(black)(int_a^bf(x)dx~~f(x_0)xxDeltax + f(x_1)xxDeltax ... f(x_(n-1))xxDeltax)`. This is an overestimate when f(x) is decreasing and an underestimate when f(x) is increasing.</p>
+                        <p>Right-Hand Riemann Sums: `color(black)(int_a^bf(x)dx~~f(x_1)xxDeltax + f(x_2)xxDeltax ... f(x_(n))xxDeltax)`. This is an overestimate when f(x) is increasing and an underestimate when f(x) is decreasing.</p>
+                        <p>Mid-Point Riemann Sums: `color(black)(int_a^bf(x)dx~~f((x_0+x_1)/2)xxDeltax + ... f((x_(n-1)+x_n)/2)xxDeltax)`</p>
+                        <p>Trapezoidal Sums: `color(black)(int_a^bf(x)dx~~(f(x_0)+f(x_1))/2xxDeltax + ... (f(x_(n-1))+f(x_n))/2xxDeltax`</p>
                     </div>
                     <div class="divider"></div>
                     <div id="ftc" class="section scrollspy">
@@ -219,12 +225,20 @@
                         <h6 class="light-blue-text">Volume of Known Cross-Sections</h6>
                         <p>`color(black)(Volume = int_a^bA(x)dx)` where A(x) is the area formula and dx is the thickness of the slice. When you do cross-sections like this, you are essentially taking the area of a shape and multiplying it by a thickness to get a volume, except the thickness is extremely infinitesimal small amount and you are taking the area at points like x=2 and x=2.0000000000001, except a smaller difference. By doing this, you make a smooth shape.</p>
                         <h6 class="light-blue-text">Solids of Revolution: Washer Method</h6>
-                        <h6 class="light-blue-text">Solids of Revolution: Shell Method</h6>
+                        <p>If there is only one function then the washer method equation is `color(black)(Volume = piint_a^bR^2dx)` where R is the positive distance between the function and the axis of rotation. If there is two functions then the washer method The washer method equation is: `color(black)(Volume = piint_a^b(R^2-r^2)dx)` where R is the largest positive distance that can be made between the axis of rotation and one of the functions and where r is the smallest positive distance that can be made between the axis of rotation and the other function. This is the best way to get the volume if the function is parallel to the axis of rotation, this means that if you are given y=f(x) and you are rotating around a y=k axis of rotation, you should use washer method. Same thing with x=f(y) and you are rotating around x=k.</p>
+                        <h6 class="light-blue-text">Solids of Revolution: Shell Method (BC)</h6>
+                        <p>Use this method if the function is perpindicular to the axis of rotation. This means that if you are given y=f(x) and you are rotating around x=k axis of rotation, you should use the shell method, and if you are given x=f(y) and you are rotating around y=k axis of rotation, you should use the shell method.</p>
+                        <p>The equation for shell method is `color(black)(Volume = 2piint_a^br(x)h(x)dx)` where r(x) is the positive distance from the axis of rotation to the representative rectangles and h(x) is the function.</p>
+                        <h6 class="light-blue-text">Arc Length (BC)</h6>
+                        <p>The formula for arc length is `color(black)(int_a^bsqrt(1+((dy)/(dx))^2))`</p>
+                        <p>If you want to know how this equation was derived, Sal Khan made a very good video explaining how arc length is derived, see it <a href="https://www.khanacademy.org/math/ap-calculus-bc/bc-applications-definite-integrals/bc-arc-length/v/arc-length-formula">here</a>.</p>
                     </div>
                     <div class="divider"></div>
                     <div id="relationships" class="section scrollspy">
                         <h5 class="light-blue-text">Relating Derivatives and Integrals</h5>
-                        <h6 class="light-blue-text"></h6>
+                        <p>Derivatives and integrals are extremely connected throughout calculus. Consider the function f(x), the derivative is f'(x), and second derivative is f''(x), and so on. The antiderivative (with +c being determined) of f''(x) is f'(x), and the antiderivative of f'(x) is f(x), and the antiderivative of f(x) is F(x).</p>
+                        <p>This connection between derivatives and integrals is best seen in the motion problems. Consider the position function s(t), the y-axis is meters, and the x-axis is seconds. When you take the derivaitve, you find the slope, or rise/run, which is meters/seconds, which is what velocity is. And when you take the slope of velocity, which the y-axis is meters/seconds and the x-axis is seconds, you get acceleration which is `color(black)((meters)/((seconds)^2))`. </p>
+                        <p>Then when you take the antiderivative of acceleration, whose y-axis is `color(black)((meters)/((seconds)^2))` and the x-axis is seconds, you find the area by multiplying width and height, where the width is seconds, so you have the result of meters/seconds because `color(black)((meters)/((seconds)^2) xx seconds=(meters)/(seconds))`. Then when you take the antiderivative of velocity, you do meters/seconds multiplied by seconds to get meters, which is position.</p>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
