@@ -151,19 +151,24 @@
                         <p>If a function `color(black)(f(x) = sum_(n=1)^ooa_n(x-c)^n)` has a radius of convergence of R > 0, then on the interval (c-R, c+R) f is differentiable and also continuous. In that case, `color(black)(f'(x) = sum_(n=1)^oona_n(x-c)^(n-1))` or `color(black)(intf(x)dx = c + sum_(n=1)^oo(a_n(x-c)^(n+1))/(n+1))`</p>
                         <p>Something to note is that when differentiating or integrating, the radius of convergence of the series obtained by doing such operations is the same as that of the original power series. However, the interval of convergence may be different.</p>
                         <h6 class="light-blue-text">Radius of Convergence</h6>
-                        <p>You can find the radius of convergence through the use of the ratio test, because you will end up with the form `color(black)(abs(x-c)` > 1/R. After you find your interval of convergence, you must test the end points to see if the series is convergent at the end points.</p>
+                        <p>You can find the radius of convergence through the use of the ratio test, because you will end up with the form `color(black)(abs(x-c)` > 1. After you find your interval of convergence, you must test the end points to see if the series is convergent at the end points.</p>
                     </div>
                     <div class="divider"></div>
                     <div id="geometric" class="section scrollspy">
                         <h5 class="light-blue-text">Geometric Power Series</h5>
-                    </div>
-                    <div class="divider"></div>
-                    <div id="maclaurin" class="section scrollspy">
-                        <h5 class="light-blue-text">MacLaurin Series</h5>
+                        <p>The sum of a geometric series is written as `color(black)(Sum =a/(1-r)`. If you are given something in the form of `color(black)(a/(1-r)` then you can rewrite it in a the form of a power series as `color(black)(sum_(n=0)^ooar^n)`.</p>
+                        <p>For example, if you are given the equation `color(black)(3/(2+x^2)` which is equal to `color(black)(3/(2(1-(-1/2x^2)))`  which equals `color(black)((3/2)/((1-(-1/2x^2))))`. When you put this in the form of a power series you will get `color(black)(sum_(n=0)^oo(3/2)(-1)^n(1/2x)^(2n))`.</p>
                     </div>
                     <div class="divider"></div>
                     <div id="taylor" class="section scrollspy">
                         <h5 class="light-blue-text">Taylor Series</h5>
+                        <p>Taylor series is a power series that represents a function centered around the x=c. Taylor series are generally in the form of `color(black)(sum_(n=0)^oo f^(n)(c) (x-c)^n/(n!))`</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="maclaurin" class="section scrollspy">
+                        <h5 class="light-blue-text">MacLaurin Series</h5>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
@@ -181,10 +186,10 @@
                             <a href="#geometric">Geometric Power Series</a>
                         </li>
                         <li>
-                            <a href="#maclaurin">MacLaurin Series</a>
+                            <a href="#taylor">Taylor Series</a>
                         </li>
                         <li>
-                            <a href="#taylor">Taylor Series</a>
+                            <a href="#maclaurin">MacLaurin Series</a>
                         </li>
                     </ul>
                 </div>
