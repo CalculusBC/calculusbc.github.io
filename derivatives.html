@@ -162,12 +162,62 @@
                         <p>`color(black)(to 2x(dy)/(dx)+2y(dy)/(dx)=-3x^2-2y)`</p> 
                         <p>`color(black)(to (dy)/(dx)(2x+2y)=-3x^2-2y)`</p>
                         <p>`color(black)(to (dy)/(dx)=(-3x^2-2y)/(2x+2y))`</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Implicit Differentiation Practice<i class="material-icons right">expand_less</i></span>
+                                <p>`color(black)(2x+3xy-y^2=10)`</p>
+                                <p>Question 1: What is `color(black)((dy)/(dx))`</p>
+                                <p>Question 2: What is the value of `color(black)((dy)/(dx))` at (2, 4)</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: `color(black)((dy)/(dx)=(-2-3y)/(3x-2y))`</p>
+                                <p>Answer 2: 7</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="divider"></div>
                     <div id="inverse" class="section scrollspy">
                         <h5 class="light-blue-text">Derivatives of Inverse Functions</h5>
+                        <p>In inverse functions, one function's x-value is the other's y-value and vice versa. You can determine the inverse of a function by substituting the x(s) in the equation for the y(s) and the y(s) in the equation for x(s) and then solving for y.</p>
                         <p>If g(x) is the inverse of f(x), then `color(black)(g'(x)=1/(f'(g(x))))`</p>
                         <p>*This is usually only like one question on the entire AP test</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Inverse Function Derivatives Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Let h and j be inverse functions</p>
+                                <table class="highlight">
+                                    <thead>
+                                        <tr>
+                                            <th>x</th>
+                                            <th>h(x)</th>
+                                            <th>h'(x)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>1</td>
+                                            <td>7</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>What is j'(1)</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer: 1/7</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="divider"></div>
                     <div id="differentiability" class="section scrollspy">
@@ -176,6 +226,28 @@
                         <p>A function is differentiable at a point if `color(black)(lim_(xtoc-)f'(x)=lim_(xtoc+)f'(x))`</p>
                         <p>Non-differentiable functions are those that have a sudden change in slope or are wildly oscillating.</p>
                         <p>If a function is differentiable at x=c, then it is also continuous at x=c. This is what differentiability implies continuity means.</p>
+                        <p>Here's some practice</p>
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <div class="video-container">
+                                    <iframe src="https://www.desmos.com/calculator/knnp9vwpcw?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Differentiability Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Question 1: Is the function differentiable at x=-1?</p>
+                                <p>Question 2: Is the function differentiable at x=0?</p>
+                                <p>Question 3: Is the function differentiable at x=1?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: Yes</p>
+                                <p>Answer 2: No (Sharp Change)</p>
+                                <p>Answer 3: Yes</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="divider"></div>
                     <div id="apply" class="section scrollspy">
@@ -189,6 +261,21 @@
                         <p>Carrying capacity is calculated by finding out what P value will make dP/dt equal to 0, in both equations if P is equal to 0, then the growth will be 0, which makes sense, because if there is nobody in the population, then the population cannot grow. If you wanna know what the carrying capacity is, you'll have to look at `color(black)(L-P)` or `color(black)(1-P/L)`. In the first equation, dP/dt equals zero when P=L, so L is the carrying capacity. In the second equation, dP/dt is equal to zero when P=L, because P/L=1 and 1-1=0.</p>
                         <p>The time when population is growing the fastest will always be half of the carrying capacity.</p>
                         <p>The graph of population can start above the carrying capcity or below it, but it will always grow or decay in an s-curve like manner to get to the carrying capacity.</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Logistics Models Practice<i class="material-icons right">expand_less</i></span>
+                                <p>A population's growth is modeled by the logistic equation `color(black)((dP)/(dt)=100P(6-P/100))`</p>
+                                <p>Question 1: What is the carrying capacity of the population?</p>
+                                <p>Question 3: When is the population growing the fastest?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: 600 members</p>
+                                <p>Answer 2: 300 members</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">

@@ -75,6 +75,42 @@
                         </div>
                     </div>
                     <div class="divider"></div>
+                    <div id="evaluation" class="section scrollspy">
+                        <h5 class="light-blue-text">Evaluating Limits</h5>
+                        <p>There are multiple ways to evaluate limits, here are the ways that you will need for the AP test. If one does not work, you can always move on to others. There are also other rules such as L'Hospital's Rule and infinite limits, but those are discussed in another section.</p>
+                        <h6 class="light-blue-text">Substitution</h6>
+                        <p>Just plug in c into f(x) to find the limit.</p>
+                        <h6 class="light-blue-text">Factor and Cancel</h6>
+                        <p>If substitution results in division by 0, then one can find a common factor in the numerator and denominator and cancel. Then reevalutate the limit using substitution.</p>
+                        <p>For example, `color(black)(lim_(xto1)(x^2+2x-3)/(x-1))` factors to `color(black)(lim_(xto1)((x+3)(x-1))/(x-1))` which cancels to `color(black)(lim_(xto1)x+3)=4`</p>
+                        <h6 class="light-blue-text">Rationalization</h6>
+                        <p>If you cannot do a factor and cancel method, but you are still doing something divided by 0, then you can try rationalization if you have a square root on the top or bottom. It involves taking the inverse of the side that has the square root.</p>
+                        <p>For example, `color(black)(lim_(xto3)(x-3)/(sqrt(4x+4)-4))` results in 0/0, so you can rationalize by multiplying by `color(black)(sqrt(4x+4)+4)/(sqrt(4x+4)+4))` (which is really one so it does not change the expression) to get `color(black)(lim_(xto3)((x-3)(sqrt(4x+4)+4))/(4x+4-16))` which equals `color(black)(lim_(xto3)((x-3)(sqrt(4x+4)+4))/(4x-12))` which equals `color(black)(lim_(xto3)((x-3)(sqrt(4x+4)+4))/(4(x-3)))` which cancels to `color(black)(lim_(xto3)((sqrt(4x+4)+4))/4=2)`</p>
+                        <h6 class="light-blue-text">Special Trig Limits</h6>
+                        <p>`color(black)(lim_(xto0)(sin(x))/(x)=1)`</p>
+                        <p>`color(black)(lim_(xto0)(1-cos(x))/(x)=0)`</p>
+                        <p>You can memorize these special trig limits, or you can use L'Hospital's so you do not have to memorize them.</p>
+                        <h6 class="light-blue-text">One-Sided Limit</h6>
+                        <p>When substiution results in 1/0 in a one-sided limit, then thhe limit equals `color(black)(oo or -oo)`</p>
+                        <p>Here's some practice.</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Determining Limits Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Question 1: What is `color(black)(lim_(xto2)x^3+4x^2-2x+3`?</p>
+                                <p>Question 2: What is `color(black)(lim_(xto3)(x^2-3x)/(x^2-9))`?</p>
+                                <p>Question 3: What is `color(black)(lim_(xto4)(sqrt(x+5)-3)/(x-4)`?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: 23 (Direct Substitution)</p>
+                                <p>Answer 2: 1/2 (Factor and Cancel)</p>
+                                <p>Answer 3: 1/6 (Rationalization)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
                     <div id="theorems" class="section scrollspy">
                         <h5 class="light-blue-text">Limit Theorems</h5>
                         <p>Here are the main limit theorems that you need to know for calculus.</p>
@@ -170,6 +206,9 @@
                     <ul id="toc" class="section table-of-contents">
                         <li>
                             <a href="#introduction">What is a Limit?</a>
+                        </li>
+                        <li>
+                            <a href="#evaluation">Evaluating Limits</a>
                         </li>
                         <li>
                             <a href="#theorems">Limit Theorems</a>
