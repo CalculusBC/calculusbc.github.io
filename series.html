@@ -136,6 +136,9 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <h6 class="light-blue-text">Conditional and Absolute Convergence</h6>
+                        <p>When you find an alternating series that converges, it only conditionally converges until you determine that it absolutely converges. Absolute convergence means that the series will also converge even after you take the absolute value of the series. If the series does not absolutely converge, it can still conditonally converge or diverge.</p>
+                        <p>For example, `color(black)(sum_(n=1)^oo(-1)^n 1/n)` conditionally converges due to the alternating series test because the series 1/n exists for all n > 1, it is decreasing, and it approaches 0. It is not absolutely converge because `color(black)(sum_(n=1)^ooabs((-1)^n 1/n)=sum_(n=1)^oo 1/n)` diverges due to p-series because it is `color(black)(1/(n^1))` and according to p-series it diverges.</p>
                     </div>
                     <div class="divider"></div>
                     <div id="power" class="section scrollspy">
@@ -147,6 +150,8 @@
                         <h6 class="light-blue-text">Properties of Functions Defined by Power Series</h6>
                         <p>If a function `color(black)(f(x) = sum_(n=1)^ooa_n(x-c)^n)` has a radius of convergence of R > 0, then on the interval (c-R, c+R) f is differentiable and also continuous. In that case, `color(black)(f'(x) = sum_(n=1)^oona_n(x-c)^(n-1))` or `color(black)(intf(x)dx = c + sum_(n=1)^oo(a_n(x-c)^(n+1))/(n+1))`</p>
                         <p>Something to note is that when differentiating or integrating, the radius of convergence of the series obtained by doing such operations is the same as that of the original power series. However, the interval of convergence may be different.</p>
+                        <h6 class="light-blue-text">Radius of Convergence</h6>
+                        <p>You can find the radius of convergence through the use of the ratio test, because you will end up with the form `color(black)(abs(x-c)` > 1/R. After you find your interval of convergence, you must test the end points to see if the series is convergent at the end points.</p>
                     </div>
                     <div class="divider"></div>
                     <div id="geometric" class="section scrollspy">
