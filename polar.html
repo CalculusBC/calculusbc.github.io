@@ -50,9 +50,36 @@
                             <iframe src="https://www.desmos.com/calculator/mrl5lvwly8?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
                         </div>
                     </div>
-                    <div id="structure" class="section scrollspy">
+                    <div class="divider"></div>
+                    <div id="conversion" class="section scrollspy">
+                        <h5 class="light-blue-text">Converting Equation Forms</h5>
+                        <p>You can switch between polar and rectangular forms by using the following equations:</p>
+                        <p>`color(black)(x^2+y^2=r^2)`</p>
+                        <p>`color(black)(x=rcos(theta))`</p>
+                        <p>`color(black)(y=rsin(theta))`</p>
+                        <p>`color(black)(tan(theta)=y/x)`</p>
                     </div>
-                    <div id="initialization" class="section scrollspy">
+                    <div class="divider"></div>
+                    <div id="derivative" class="section scrollspy">
+                        <h5 class="light-blue-text">Derivative of a Polar Equation</h5>
+                        <p>The derivative of a polar function is similar to parametric functions.</p>
+                        <p>The first derivative is: `color(black)((dy)/(dx)=((dy)/(d theta))/((dx)/(d theta)))`</p>
+                        <p>The second derivative is: `color(black)((d/(d theta)[(dy)/(dx)])/((dx)/(d theta)))`. Knowing this is not nearly as important as knowing the first derivative of a polar function.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="intersections" class="section scrollspy">
+                        <h5 class="light-blue-text">Finding Intersection Points</h5>
+                        <p>In order to find the intersecting points between polar functions just make the functions equal each other and then solve for `color(black)(theta)`</p>
+                        <p>For example, the intersection points between `color(black)(r=cos(theta))` and `color(black)(r=sin(theta))` would be found through `color(black)(sin(theta)=cos(theta))` which would be `color(black)(theta = pi/4, (5pi)/4, pi/4+kpi)`</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="area" class="section scrollspy">
+                        <h5 class="light-blue-text">Area</h5>
+                        <h6 class="light-blue-text">One Equation</h6>
+                        <p>In order to find the area of one polar equation from [a, b], plug in the polar equation into this formula: `color(black)(A=1/2int_a^br^2d theta)`</p>
+                        <h6 class="light-blue-text">Two Equation</h6>
+                        <p>Set the equations equal to each other and solve for θ, which are the points of intersection. Set up the integral between both points and subtract the bottom equation from the top equation. Make sure to square each equation individually and remember the ½ on the outside.</p>
+                        <p>`color(black)(A=1/2int_a^b(r_1^2-r_2^2)d theta)`</p>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
@@ -61,10 +88,16 @@
                             <a href="#introduction">What is a Polar Function?</a>
                         </li>
                         <li>
-                            <a href="#structure">Structure</a>
+                            <a href="#conversion">Converting Equation Forms</a>
                         </li>
                         <li>
-                            <a href="#initialization">Intialization</a>
+                            <a href="#derivative">Derivative of a Polar Equation</a>
+                        </li>
+                        <li>
+                            <a href="#intersections">Finding Intersection Points</a>
+                        </li>
+                        <li>
+                            <a href="#area">Area</a>
                         </li>
                     </ul>
                 </div>
