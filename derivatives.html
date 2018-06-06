@@ -279,6 +279,8 @@
                         <h6 class="light-blue-text">Euler's Method</h6>
                         <p>When you are given the derivative of a function and a point on the function, but not the function itself, you can use Euler's Method to try approximate another point.</p>
                         <p>You will have to approximate by using multiple steps depending on what the problem asks. The formula for Euler's method is `color(black)(y_n=(dy)/(dx)|_((x=n-1,y=n-1))Delta x + y_(n-1))`</p>
+                        <p>For example, if you have `color(black)((dy)/(dx)=y+x)` and you know (1, 2) is a point on the original function. Using two equal steps, what is the y-value if the x-value is 2.</p>
+                        <p>First, calculate `color(black)((dy)/(dx)|_((x=1, y=2)))`, which is 3. If the tangent line equation is y-2 = 3(x-1), calculate what y equals if x=1.5. y will equal 3.5 if x=1.5. Calculate `color(black)((dy)/(dx)|_((x=1.5, y=3.5)))`, which is 5. If the tangent line equation is y-3.5 = 5(x-1.5) and x=2, then y=6. So according to Euler's Method approximation, the y-value at x=2 is 6.</p>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
