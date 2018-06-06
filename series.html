@@ -139,8 +139,34 @@
                         <h6 class="light-blue-text">Conditional and Absolute Convergence</h6>
                         <p>When you find an alternating series that converges, it only conditionally converges until you determine that it absolutely converges. Absolute convergence means that the series will also converge even after you take the absolute value of the series. If the series does not absolutely converge, it can still conditonally converge or diverge.</p>
                         <p>For example, `color(black)(sum_(n=1)^oo(-1)^n 1/n)` conditionally converges due to the alternating series test because the series 1/n exists for all n > 1, it is decreasing, and it approaches 0. It is not absolutely converge because `color(black)(sum_(n=1)^ooabs((-1)^n 1/n)=sum_(n=1)^oo 1/n)` diverges due to p-series because it is `color(black)(1/(n^1))` and according to p-series it diverges.</p>
-                        <h6 class="light-blue-text">Alternating Series Bound</h6>
+                        <h6 class="light-blue-text">Alternating Series Error Bound</h6>
                         <p>If you have an alternating series and you find the Nth partial sum of a converging alternating series, then `color(black)(abs(S_oo - S_N) <= abs(a_(N+1)))`</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Determining Convergence Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Question 1: Is `color(black)(sum_(n=1)^oo((n+2)(2n-5)^4)/(13n^6))` convergent or divergent?</p>
+                                <p>Question 2: Is `color(black)(sum_(n=1)^oo(n^2-1)/(n+1))` convergent or divergent?</p>
+                                <p>Question 3: Can you use the integral test on `color(black)(sum_(n=1)^oo1/(n^2-9))`?</p>
+                                <p>Question 4: Is `color(black)(sum_(n=1)^oo1/(n^4))` convergent or divergent?</p>
+                                <p>Question 5: Is `color(black)(sum_(n=1)^oon/(n-2))` convergent or divergent?</p>
+                                <p>Question 6: Is `color(black)(sum_(n=1)^oo(1/(3^n+8)))` convergent or divergent?</p>
+                                <p>Question 7: Is `color(black)(sum_(n=1)^oo(-1)^n(1/n^4))` absolutely convergent, conditionally convergent or divergent?</p>
+                                <p>Question 8: Is `color(black)(sum_(n=1)^oo(n+4)/(n!))` convergent or divergent?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: Inconclusive (nth-Term)</p>
+                                <p>Answer 2: Divergent (nth-Term)</p>
+                                <p>Answer 3: No; the series is undefined at n=3 (Integral)</p>
+                                <p>Answer 4: Convergent (p-series)</p>
+                                <p>Answer 5: Divergent (Direct comparison test; compare to 1/n, 1/n is smaller than the series and 1/n diverges, so the series diverges)</p>
+                                <p>Answer 6: Convergent (Limit comparison test; compare to `color(black)(1/(3^n))`, `color(black)(1/(3^n))` converges due to geometric series test, and `color(black)((1/(3^n))/(1/(3^n+8))=1)` which is positive real number.</p>
+                                <p>Answer 7: Absolutely Convergent (Alternating series test)</p>
+                                <p>Answer 8: Convergent (Use ratio test and you will get `color(black)(lim_(ntooo)abs((a_(n+1))/a_n) = 0)`)</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="divider"></div>
                     <div id="power" class="section scrollspy">
