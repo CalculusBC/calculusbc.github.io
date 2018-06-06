@@ -141,11 +141,30 @@
                         <p>So after multiply across you should get `color(black)(x^5/2e^(2x)-(5x^4)/4e^(2x)+(20x^3)/8e^(2x)-(60x^2)/16e^(2x)+(120x)/32e^(2x)-120/64e^(2x))`</p>
                         <h6 class="light-blue-text">Partial Fractions (BC)</h6>
                         <p>Sometimes you cannot use u-substitution to complete `color(black)(du/u)` so you have to use partial fractions. In this case, factor the denominator, and separate the factors out into `color(black)(intA/(v) + intB/(w) + ...)`, then A + B + ... should equal what the numerator used. After this, you can use the ln rule to integrate.</p>
-                        <p>Here's an example: `color(black)((x+1)/(x^2+5x+6)dx)`, you cannot use `color(black)(du)/u)` because there is no number that you can multiply by to get the top to be the derivative of the bottom, so instead you factor the bottom into (x+3)(x+2), then separate the integrand into partial fractions of `color(black)(intA/(x+3)+intB/(x+2))`, then you cross multiply so A(x+2) + B(x+3) = x+1. Try to find out what A and B is by making the other one zero, so, for example, set x=-2, and you get A(0) + B(1) = -1, so B = -1, then set x=-3, and you get A(-1) + B(0) = -2, so A=2. Now the integral looks like `color(black)(int2/(x+3)+int-1/(x+2))` which equals `color(black)(2lnabs(x+3)-lnabs(x+2)+c)`</p>
+                        <p>Here's an example: `color(black)((x+1)/(x^2+5x+6)dx)`, you cannot use `color(black)((du)/u)` because there is no number that you can multiply by to get the top to be the derivative of the bottom, so instead you factor the bottom into (x+3)(x+2), then separate the integrand into partial fractions of `color(black)(intA/(x+3)+intB/(x+2))`, then you cross multiply so A(x+2) + B(x+3) = x+1. Try to find out what A and B is by making the other one zero, so, for example, set x=-2, and you get A(0) + B(1) = -1, so B = -1, then set x=-3, and you get A(-1) + B(0) = -2, so A=2. Now the integral looks like `color(black)(int2/(x+3)+int-1/(x+2))` which equals `color(black)(2lnabs(x+3)-lnabs(x+2)+c)`</p>
                         <h6 class="light-blue-text">Improper Integrals</h6>
                         <p>There are two types of improper integrals: The first kind involve one or both limits of integration being infinite, such as `color(black)(int_(-oo)^23x^2dx)`. The other is where the integral has an essential discontinuity in the closed interval [a, b], such as `color(black)(int_(-1)^2 1/(x^3)dx)`</p>
                         <p>In order to solve the infinite integral, you must add limits to the integral. For example `color(black)(int_0^oo f(x)dx to lim_(ctooo)int_0^c f(x)dx)`. Afterwards, you solve the for the integrals, and the integral converges to a certain finite number when you plug in infinity for c in F(c) - F(a). However, the integral diverges if the integral comes out to be infinity after plugging in infinity for c in F(c) - F(a).</p>
                         <p>In order to solve for an integral with an essential discontinuity on the closed interval [a, c] with the discontinuity at x=b, then `color(black)(int_a^cf(x)dx)` must be split into `color(black)(int_a^bf(x)dx + int_b^cf(x)dx)` If the integral converges to a finite number, then the integral exists. If it goes to infinity, then the integral diverges.</p>
+                        <p>Here's some practice.</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Determining Antiderivatives Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Question 1: What is `color(black)(intx^3+3x^2+8x+4dx)?`</p>
+                                <p>Question 2: What is `color(black)(int(12x)/(x^2)dx)`?</p>
+                                <p>Question 3: What is `color(black)(int9sec(x)tan(x)dx)`?</p>
+                                <p>Question 4: What is `color(black)(int(2cos(x))/(9+sin(x))dx)`?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: `color(black)(1/4x^4+x^3+4x^2+4x+c)`</p>
+                                <p>Answer 2: `color(black)(6ln(abs(x^2))+c)`</p>
+                                <p>Answer 3: `color(black)(9tan(x)+c)`</p>
+                                <p>Answer 4: `color(black)(2ln(abs(9+sin(x)))+c)`</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="divider"></div>
                     <div id="indefinite" class="section scrollspy">
@@ -210,6 +229,19 @@
                         <p>1. Separate the variables, x's on one side, y's on the other, etc.</p>
                         <p>2. Integrate and add +c</p>
                         <p>3. Simplify as much as possible then use the initial condition to find what c is by plugging in the x-values and y-values.</p>
+                        <p>Here's some practice.</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Solving Differential Equations Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Solve the equation `color(black)((dy)/(dx)=8xy+9x^2y)` with the initial solution of (0, 10)?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer: `color(black)(y=10e^(4x^2+3x^3))`</p>
+                            </div>
+                        </div>
                         <h6 class="light-blue-text">Motion and Integrals</h6>
                         <p>In order to find the displacement from time a to b, do `color(black)(int_a^bv(t)dt)`. This is a vector quantity and does include direction.</p>
                         <p>In order to find the total distance traveled from time a to b, do `color(black)(int_a^babs(v(t))dt)`. This is a scalar quantity and does not include direction.</p>
@@ -217,12 +249,40 @@
                         <p>In order to go from velocity function to position function, find the antiderivative of velocity and solve for c using an initial equation. To go from acceleration to velocity, find the antiderivative of acceleration and solve for c using an initial equation.</p>
                         <h6 class="light-blue-text">Average Value of a Function</h6>
                         <p>If the integral `color(black)(int_a^bf(x)dx)` gives the area under f(x) from a to b, and area is just width x height, then if you divide area by width, then you will get the height. If the width is b-a, then the average height or value of a function is `color(black)(1/(b-a)int_a^bf(x)dx)`.</p>
+                        <p>Here's some practice.</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Determining Average Value Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Question: What is the average value of `color(black)(3x^2-2)` over the interval [0, 3]?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer: 7</p>
+                            </div>
+                        </div>
                         <h6 class="light-blue-text">Area Under Curve(s)</h6>
                         <p>In order to find the area under a curve, find out which function is higher than the other and subtract the higher one by the lower one in the integrand.</p>
                         <p>For example, if f(x) is higher than g(x) then do `color(black)(int_a^b(f(x)-g(x))dx)`</p>
                         <p>In the graph below, the blue line is y=x and the red line is `color(black)(y=x^3)`</p>
                         <div class="video-container">
                             <iframe src="https://www.desmos.com/calculator/gzxwqg2mr6?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+                        </div>
+                        <p>Here's some practice.</p>
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Determining Area Under Curve(s) Practice<i class="material-icons right">expand_less</i></span>
+                                <p>Question 1: What is the area under the curve `color(black)(f(x)=sin(x)+3)` over the interval `color(black)([0, 2 pi])`?</p>
+                                <p>Question 2: What is the area enclosed between the curves `color(black)(f(x)=cos^2((pi/2)x)` and `color(black)(g(x)=x^3+3/4)`?</p>
+                                <br>
+                                <p>Click on the up carrot to get the answer.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Answers<i class="material-icons right">close</i></span>
+                                <p>Answer 1: 18.8496</p>
+                                <p>Answer 2: .1801 (You can see the work on <a href="https://www.desmos.com/calculator/vqnw32ovin">this graph</a></p>
+                            </div>
                         </div>
                         <p>If you wanted the area under the curves from x=-1 to x=1 then you would do `color(black)(int_(-1)^0(x^3-x)dx)+int_0^1(x-x^3)dx)`</p>
                         <h6 class="light-blue-text">Volume of Known Cross-Sections</h6>
