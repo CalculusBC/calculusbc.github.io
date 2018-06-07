@@ -142,7 +142,7 @@
                         <h6 class="light-blue-text">Partial Fractions (BC)</h6>
                         <p>Sometimes you cannot use u-substitution to complete `color(black)(du/u)` so you have to use partial fractions. In this case, factor the denominator, and separate the factors out into `color(black)(intA/(v) + intB/(w) + ...)`, then A + B + ... should equal what the numerator used. After this, you can use the ln rule to integrate.</p>
                         <p>Here's an example: `color(black)((x+1)/(x^2+5x+6)dx)`, you cannot use `color(black)((du)/u)` because there is no number that you can multiply by to get the top to be the derivative of the bottom, so instead you factor the bottom into (x+3)(x+2), then separate the integrand into partial fractions of `color(black)(intA/(x+3)+intB/(x+2))`, then you cross multiply so A(x+2) + B(x+3) = x+1. Try to find out what A and B is by making the other one zero, so, for example, set x=-2, and you get A(0) + B(1) = -1, so B = -1, then set x=-3, and you get A(-1) + B(0) = -2, so A=2. Now the integral looks like `color(black)(int2/(x+3)+int-1/(x+2))` which equals `color(black)(2lnabs(x+3)-lnabs(x+2)+c)`</p>
-                        <h6 class="light-blue-text">Improper Integrals</h6>
+                        <h6 class="light-blue-text">Improper Integrals (BC)</h6>
                         <p>There are two types of improper integrals: The first kind involve one or both limits of integration being infinite, such as `color(black)(int_(-oo)^23x^2dx)`. The other is where the integral has an essential discontinuity in the closed interval [a, b], such as `color(black)(int_(-1)^2 1/(x^3)dx)`</p>
                         <p>In order to solve the infinite integral, you must add limits to the integral. For example `color(black)(int_0^oo f(x)dx to lim_(ctooo)int_0^c f(x)dx)`. Afterwards, you solve the for the integrals, and the integral converges to a certain finite number when you plug in infinity for c in F(c) - F(a). However, the integral diverges if the integral comes out to be infinity after plugging in infinity for c in F(c) - F(a).</p>
                         <p>In order to solve for an integral with an essential discontinuity on the closed interval [a, c] with the discontinuity at x=b, then `color(black)(int_a^cf(x)dx)` must be split into `color(black)(int_a^bf(x)dx + int_b^cf(x)dx)` If the integral converges to a finite number, then the integral exists. If it goes to infinity, then the integral diverges.</p>
@@ -223,7 +223,7 @@
                     </div>
                     <div class="divider"></div>
                     <div id="application" class="section scrollspy">
-                        <h5 class="light-blue-text">Application of Integrals</h5>
+                        <h5 class="light-blue-text">Applications of Integrals</h5>
                         <h6 class="light-blue-text">Solving Differential Equations</h6>
                         <p>In order to solve a differential equation there are certain steps that you have to follow.</p>
                         <p>1. Separate the variables, x's on one side, y's on the other, etc.</p>
@@ -364,7 +364,7 @@
                             <ul>
                                 <li><a class="grey-text text-lighten-4" href="series.html">Series</a></li>
                                 <li><a class="grey-text text-lighten-4" href="polar.html">Polar</a></li>
-                                <li><a class="grey-text text-lighten-4" href="parametric.html">Parametric</a></li>
+                                <li><a class="grey-text text-lighten-4" href="parametric.html">Parametric/Vectors</a></li>
                             </ul>
                         </div>
                     </div>
